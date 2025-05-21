@@ -4,7 +4,7 @@ My rendition of the uTerm2-S by Just4Fun (https://hackaday.io/project/181583-ute
 The nTerm2-S has a slightly more usable form the uTerm2-S, I think. Smaller and a little more usable when sitting permanently on a desk. And as an extra, it can switch between normal and cross (null-modem) from the software so that you wil never have to search for that null-modem cable ever again. It can also switch between RTS/CTS or DTR/DSR handshaking.
 
 > [!NOTE]
-> This is a continuation of the design of the nTerm2-S (found here: https://github.com/RetepV/nTerm2-S). Now that I am reaching completion, I have decided to switch from using a CP2102 to using an FT231. The FT231 is just easier to solder with a soldering iron. Or better said: it CAN be soldered with a soldering iron, whereas with the CP2102 that's near impossible, it was a bad choice on my part.\
+> This is the continuation of the design of the nTerm2-S (found here: https://github.com/RetepV/nTerm2-S). Now that I am reaching completion, I have decided to switch from using a CP2102 to using an FT231. The FT231 is just easier to solder with a soldering iron. Or better said: it CAN be soldered with a soldering iron, whereas with the CP2102 that's near impossible, it was a bad choice on my part.\
 > \
 > The version with the CP2102 will be 'archived', i.e. frozen. It really does work, you can build it if you like, it will run any FabGL code and example (except the MS-Dos emulator for lack of memory). But I will abandon it and continue developing on the FT231 version.\
 > \
