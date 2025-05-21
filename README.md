@@ -17,7 +17,7 @@ The nTerm2-S is ultimately based on the FABGL library and board design from Fabr
 
 This board will run all FabGL software and examples, <ins>except</ins> the PC emulator. The PC emulator needs PSRAM, but the nTerm2-S does not have enough I/O pins left to connect a PSRAM. Maybe I will do a V2 at some point, using an I/O expander to free up ESP32 pins for connecting a PSRAM and an SD card. Or maybe I will make a new design using a newer version CPU. But let's finish the nTerm2-S first... ;)
 
-THIS IS A WORK IN PROGESS! I.E. UNLESS STATED AS WORKING, ASSUME THAT IT DOES NOT WORK! NO FIRMWARE HAS BEEN TESTED YET, AND AS THERE ARE SMALL DIFFERENCES IN GPIO ASSIGNMENTS, I DON'T EXPECT THE DEFAULT FABGL EXAMPLES TO WORK WITHOUT TWEAKS.
+THIS IS A WORK IN PROGESS! I.E. UNLESS STATED AS WORKING, ASSUME THAT IT DOES NOT WORK! (but it's looking real good ;))
 
 This design is available under GPL License V3. This means that I DO NOT release it for commercial use, unless with my explicit written and signed consent. Please contact me if you have commercial questions.
 
