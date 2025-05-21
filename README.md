@@ -19,7 +19,7 @@ This board will run all FabGL software and examples, <ins>except</ins> the PC em
 
 THIS IS A WORK IN PROGESS! I.E. UNLESS STATED AS WORKING, ASSUME THAT IT DOES NOT WORK! (but it's looking real good ;))
 
-This design is available under GPL License V3. This means that I DO NOT release it for commercial use, unless with my explicit written and signed consent. Please contact me if you have commercial questions.
+This design is available under GPL License V3. This means that I DO NOT release it for commercial use, unless with my explicit written and signed consent. Please contact me first if you have commercial questions.
 
 uTerm2-S: https://hackaday.io/project/181583-uterm2-s-a-multi-emulation-color-rs232-terminal  
 fabgl: http://www.fabglib.org/, https://github.com/fdivitto/FabGL
