@@ -1,0 +1,214 @@
+(footprint "CP_EIA-6032-28_Kemet-C_Pad2.25x2.35mm_HandSolder"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(descr "Tantalum Capacitor SMD Kemet-C (6032-28 Metric), IPC_7351 nominal, (Body size from: http://www.kemet.com/Lists/ProductCatalog/Attachments/253/KEM_TC101_STD.pdf), generated with kicad-footprint-generator")
+	(tags "capacitor tantalum")
+	(property "Reference" "REF**"
+		(at -4.9784 0.0874 90)
+		(layer "F.SilkS")
+		(uuid "616b2bdd-99e2-465d-9dc2-fa29ebafeb6a")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "10u/25v"
+		(at 0 2.55 0)
+		(layer "F.Fab")
+		(uuid "ba0c5d46-9da9-4149-9ac5-242cc51a0d46")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "96915f00-0bb9-478c-8b50-65fd2548ca64")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" "Polarized capacitor"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "2aec0e8f-5592-4d7e-a077-893bf37d224f")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_line
+		(start -3.935 -1.71)
+		(end -3.935 1.71)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "628228e0-6e25-4d0f-9c4e-6957467b410f")
+	)
+	(fp_line
+		(start -3.935 1.71)
+		(end 3 1.71)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "b7e4f398-10ba-414a-aef5-a18f763b5119")
+	)
+	(fp_line
+		(start 3 -1.71)
+		(end -3.935 -1.71)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "3258c80f-acdc-4a22-b989-1f4502d67fba")
+	)
+	(fp_line
+		(start -3.92 -1.85)
+		(end 3.92 -1.85)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "f430cc27-499d-4d70-b1f4-1cb5a807c166")
+	)
+	(fp_line
+		(start -3.92 1.85)
+		(end -3.92 -1.85)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "cef03b07-0f19-46ec-b3c0-dc7d86281608")
+	)
+	(fp_line
+		(start 3.92 -1.85)
+		(end 3.92 1.85)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "bb3774aa-df13-47f6-ad08-5c016e5ed652")
+	)
+	(fp_line
+		(start 3.92 1.85)
+		(end -3.92 1.85)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "a3759143-f9e5-413b-845b-564e5e2afdd7")
+	)
+	(fp_line
+		(start -3 -0.8)
+		(end -3 1.6)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "6af180d8-44a1-4f9e-b80f-c21d963b0163")
+	)
+	(fp_line
+		(start -3 1.6)
+		(end 3 1.6)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "cb10195d-51e1-484e-8d69-6d028f0725d1")
+	)
+	(fp_line
+		(start -2.2 -1.6)
+		(end -3 -0.8)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "c5a5565b-d0ac-4991-b260-d18c4b6fecf1")
+	)
+	(fp_line
+		(start 3 -1.6)
+		(end -2.2 -1.6)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "7ba2d902-75d3-469a-9c1b-e9cc51b9154c")
+	)
+	(fp_line
+		(start 3 1.6)
+		(end 3 -1.6)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "b365b121-d95c-458c-baab-7fb2c45be82e")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(uuid "53bc4e33-8f45-476f-b79b-3b378f28eb4b")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" smd roundrect
+		(at -2.55 0)
+		(size 2.25 2.35)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.111111)
+		(uuid "85d9ec0d-a697-4fc1-ab9a-e82267763300")
+	)
+	(pad "2" smd roundrect
+		(at 2.55 0)
+		(size 2.25 2.35)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.111111)
+		(uuid "b696473c-7f29-480a-b86f-600ae466faf7")
+	)
+	(embedded_fonts no)
+	(model "${KICAD8_3DMODEL_DIR}/Capacitor_Tantalum_SMD.3dshapes/CP_EIA-6032-28_Kemet-C.wrl"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

@@ -1,0 +1,295 @@
+(footprint "TSOC-6_3.76x3.94mm_P1.27mm"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(descr "Maxim Integrated TSOC-6 D6+1,https://datasheets.maximintegrated.com/en/ds/DS2401.pdf, https://pdfserv.maximintegrated.com/land_patterns/90-0321.PDF")
+	(tags "TSOC-6")
+	(property "Reference" "REF**"
+		(at -3.303 -1.397 90)
+		(layer "F.SilkS")
+		(uuid "720b50ba-2bf0-4610-9f86-1116bfb47624")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "DS2417"
+		(at 0 3 0)
+		(layer "F.Fab")
+		(uuid "06384918-93a2-4ac8-be44-5b4dc3e45b68")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" "https://www.analog.com/media/en/technical-documentation/data-sheets/ds2417.pdf"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "9b068004-bef5-4dba-a98a-dc26aa2acb41")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" "DS2417 1-Wire Time Chip with Interrupt"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "db85b6fc-6291-43da-bc83-2782e4a257fe")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_line
+		(start -1.99 -1.795)
+		(end -1.99 -2.08)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "e11bbc01-3305-4426-adde-e9381480a2f9")
+	)
+	(fp_line
+		(start -1.99 1.795)
+		(end -1.99 2.08)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "72df0360-c134-4ee3-af40-d35b50644e99")
+	)
+	(fp_line
+		(start -1.99 2.08)
+		(end 1.99 2.08)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "b05191c4-b9e2-4a04-8767-f7134c30cbe5")
+	)
+	(fp_line
+		(start 1.99 -2.08)
+		(end -1.99 -2.08)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "c45d02f9-d867-41b6-940d-6863161a08aa")
+	)
+	(fp_line
+		(start 1.99 -2.08)
+		(end 1.99 -1.795)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "230c7883-201c-4f58-885f-97d9db2825a4")
+	)
+	(fp_line
+		(start 1.99 1.795)
+		(end 1.99 2.08)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "a589fadb-960f-4d18-a7eb-40703ecfe2e2")
+	)
+	(fp_poly
+		(pts
+			(xy -2.25 -1.8) (xy -2.53 -1.8) (xy -2.25 -2.08) (xy -2.25 -1.8)
+		)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(fill yes)
+		(layer "F.SilkS")
+		(uuid "7ad4b038-d54b-46f2-b6aa-eae7197223bf")
+	)
+	(fp_line
+		(start -2.44 -2.22)
+		(end -2.44 2.22)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "40a281ee-a99e-48c5-82e8-732bf30863ba")
+	)
+	(fp_line
+		(start -2.44 -2.22)
+		(end 2.44 -2.22)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "98956867-b063-46be-bf9c-9c9b9b9e2ff9")
+	)
+	(fp_line
+		(start -2.44 2.22)
+		(end 2.44 2.22)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "0059b46a-da1d-4d21-90c3-e3eb958ca897")
+	)
+	(fp_line
+		(start 2.44 -2.22)
+		(end 2.44 2.22)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "9dc72875-e808-4d19-8f8d-33761d0a0df3")
+	)
+	(fp_line
+		(start -1.88 -1.27)
+		(end -1.88 1.97)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "d5c01ba0-9b2b-40d1-9085-62aa61f091d6")
+	)
+	(fp_line
+		(start -1.88 -1.27)
+		(end -1.18 -1.97)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "e9ace97f-b1b8-4b63-9de7-76b4a2bec6e9")
+	)
+	(fp_line
+		(start -1.88 1.97)
+		(end 1.88 1.97)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "df1de4fe-0d9b-4a58-84ea-fe276b10ca4d")
+	)
+	(fp_line
+		(start -1.18 -1.97)
+		(end 1.88 -1.97)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "f4ce23e6-5a87-47ef-b3ee-61a2ccd7cb2a")
+	)
+	(fp_line
+		(start 1.88 -1.97)
+		(end 1.88 1.97)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "0dfc7b61-e988-49d7-b4a4-38bb03e1fdf5")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(uuid "6dc047f9-001c-46ad-b4ba-93d3f20b95a9")
+		(effects
+			(font
+				(size 0.7 0.7)
+				(thickness 0.127)
+			)
+		)
+	)
+	(pad "1" smd roundrect
+		(at -1.525 -1.27)
+		(size 1.33 0.53)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.25)
+		(uuid "7eabb9d4-dcf5-4977-9a0a-0f86a9813d2a")
+	)
+	(pad "2" smd roundrect
+		(at -1.525 0)
+		(size 1.33 0.53)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.25)
+		(uuid "deed30d7-7add-4ea5-a184-fd93d4b9be81")
+	)
+	(pad "3" smd roundrect
+		(at -1.525 1.27)
+		(size 1.33 0.53)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.25)
+		(uuid "2fe48342-09d6-4640-9eaf-12ecac0cf23e")
+	)
+	(pad "4" smd roundrect
+		(at 1.525 1.27)
+		(size 1.33 0.53)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.25)
+		(uuid "a48aebec-240c-464a-8540-c091ed2f0d5c")
+	)
+	(pad "5" smd roundrect
+		(at 1.525 0)
+		(size 1.33 0.53)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.25)
+		(uuid "52935f1d-e9aa-48b8-9832-398490d3a2a1")
+	)
+	(pad "6" smd roundrect
+		(at 1.525 -1.27)
+		(size 1.33 0.53)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.25)
+		(uuid "81577e9c-6edc-4bed-b84c-fd120fa12ac2")
+	)
+	(embedded_fonts no)
+	(model "${KICAD8_3DMODEL_DIR}/Package_SO_J-Lead.3dshapes/TSOC-6_3.76x3.94mm_P1.27mm.wrl"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+	(model "/Users/retepv/Documents/kicad/Sporos_Tech/Sporos_Tech_Packages3D/User Library-TSOC6.STEP"
+		(offset
+			(xyz -2 2 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -0 -0 -0)
+		)
+	)
+)
