@@ -19,7 +19,11 @@ This board will run all FabGL software and examples, <ins>except</ins> the PC em
 
 29-5-2025
 
-The real time clock survived the night on only the backup power. :)
+The real time clock survived the night on only the backup power. :) At the last moment, I decided to put a series resistor of 150 ohm with the supercap (there was none in [Dallas's reference design](https://nl.mouser.com/datasheet/2/272/rtc-4-click-manual-v100-1483841.pdf). The inrush current when the supercap is empty of charge could be quite high. It's just for a short time, but theoretically it could cause such a power dip that it would cause boot loops. I haven't measured the inrush current, but "the word" is that it could even be multiple Amperes, which could theoretically also cause a track to burn.
+
+I used a used Panasonic 1F 5.5V supercap that I had lying around, while I waiting for new ones to arrive.
+
+I will also do some experiments with using a battery and an extra BAT43 diode. That's also 2 components, and maybe a better plan. If the voltage drop over the diode is too high, maybe I could use a NID5100?
 
 28-5-2025
 
