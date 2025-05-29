@@ -17,6 +17,10 @@ This board will run all FabGL software and examples, <ins>except</ins> the PC em
 
 # Progress
 
+29-5-2025
+
+The real time clock survived the night on only the backup power. :)
+
 28-5-2025
 
 I just wanted to share some images of the progress I am making. I am still using the previous board with the CP2102 for developing and prototyping.
