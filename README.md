@@ -3,9 +3,7 @@
 > [!NOTE]
 > This is the continuation of the design of the nTerm2-S (found here: https://github.com/RetepV/nTerm2-S). Now that I am reaching completion, I have decided to switch from using a CP2102 to using an FT231. The FT231 is just easier to solder with a soldering iron. Or better said: it CAN be soldered with a soldering iron, whereas with the CP2102 that's near impossible, it was a bad choice on my part.\
 > \
-> The version with the CP2102 will be 'archived', i.e. frozen. It really does work, you can build it if you like, it will run any FabGL code and example (except the MS-Dos emulator for lack of memory). But I will abandon it and continue developing on the FT231 version.\
-> \
-> For instance: while developing the software, I found that it really did need a real-time-clock, so I have added that to nTerm2-S-FT231, and will not add it the CP2102 version (unless someone really, really wants it :))
+> The version with the CP2102 will be 'archived', i.e. frozen. It really does work, you can build it if you like, it will run any FabGL code and example (except the MS-Dos emulator for lack of memory). But I will abandon it and continue developing on the FT231 version.
 
 This is my rendition of the uTerm2-S by Just4Fun (https://hackaday.io/project/181583-uterm2-s-a-multi-emulation-color-rs232-terminal). My one is in SMD, and I hopefully made it easily hand-solderable for everyone. Obviously the 'n' in nTerm stands for 'nano.' :P
 
@@ -16,6 +14,50 @@ It can also switch between hardware-supported RTS/CTS and DTR/DSR handshaking. W
 The nTerm2-S is ultimately based on the FABGL library and board design from Fabrizio Di Vittori. http://www.fabglib.org. However, I skipped Fabrizio's implementation and based my design on Just4Fun's uTerm2-S. https://j4f.info/uterm2-s
 
 This board will run all FabGL software and examples, <ins>except</ins> the PC emulator. The PC emulator needs PSRAM, but the nTerm2-S does not have enough I/O pins left to connect a PSRAM. Maybe I will do a V2 at some point, using an I/O expander to free up ESP32 pins for connecting a PSRAM and an SD card. Or maybe I will make a new design using a newer version CPU. But let's finish the nTerm2-S first... ;)
+
+# Progress
+
+29-5-2025
+
+The real time clock survived the night on only the backup power. :) At the last moment, I decided to put a series resistor of 150 ohm with the supercap (there was none in [Dallas's reference design](https://nl.mouser.com/datasheet/2/272/rtc-4-click-manual-v100-1483841.pdf). The inrush current when the supercap is empty of charge could be quite high. It's just for a short time, but theoretically it could cause such a power dip that it would cause boot loops. I haven't measured the inrush current, but "the word" is that it could even be multiple Amperes, which could theoretically also cause a track to burn.
+
+I used a used Panasonic 1F 5.5V supercap that I had lying around, while I waiting for new ones to arrive.
+
+I will also do some experiments with using a battery and an extra BAT43 diode. That's also 2 components, and maybe a better plan. If the voltage drop over the diode is too high, maybe I could use a NID5100?
+
+28-5-2025
+
+I just wanted to share some images of the progress I am making. I am still using the previous board with the CP2102 for developing and prototyping.
+
+This is my development set up. I am testing with an actual computer, a Synertek SYM-1. It has 8K of ram, and runs Microsoft BASIC. Also note the tiny screen that I'm using. It's an old 800x480 LCD screen that I had laying around. I found out that it was LVDS, and purchased a board that can convert VGA (and HDMI and CVBS) to LVDS to drive the screen. Next thing is to make a case for it, but I couldn't wait to use it.
+
+![IMG_3453](https://github.com/user-attachments/assets/ca41f64e-099e-4f32-ae9c-2923e83725bc)
+
+Closeup of the nTerm2-S and the screen.
+
+![IMG_3450](https://github.com/user-attachments/assets/5420cfc8-9396-4ef1-8951-0213b310a427)
+
+
+Here I have added the DS2417 real time clock. It was easy, thanks to a whole bunch of people who created the [Arduino OneWire library](https://www.pjrc.com/teensy/td_libs_OneWire.html). I'm using a supercap as backup solution now, but might maybe switch to using a CR2023. But I'm not sure if that will work. I would have to add another diode in series making the voltage (in theory) 3V - 0.4V = 2.6V. But the lowest voltage supported by the DS2417 is 2.5V, so it's right on the edge. With the supercap I have some 3.2V. But the supercap will maybe last 2 weeks or so, while the CR2023 would probably last for years.
+
+23-5-2025
+
+What makes the difference between a home computer and a professional computer? The Real Time Clock! While working on the nTerm2-S firmware, I was able to add a status bar to the terminal. Memory is really tight, but CPU performance is not. So I thought: let's update it 10 times a second and show some sort of status of Rx, Tx, RTS and CTS, some blinkenlights. And then I thought that it would also be nice to show the time (and maybe date) in the status bar. That was quickly added. But well, what good are the time and date if you need to enter it manually every time you reset the terminal. So, we need an RTC.
+
+Looking at the GPIO's left on the ESP32, there was a problem. Only one bidirectional GPIO (14) and one input-only (36) left. What can we do with that? I2C is out of the question, we need 1 output (or bidirectional) and 1 bidirectional GPIO for that. SPI even needs 3 GPIOs, and might possibly be done with only 2. But we have only 1 bidirectional wire... 1-wire! And looking around, I found the [Dallas Semiconductor DS2417](https://www.analog.com/media/en/technical-documentation/data-sheets/ds2417.pdf).
+
+The DS2417 is not truly a real-time clock, but rather a 64-bit counter that is auto-incremented once a second, i.e. a timestamp. This is fine, in firmware we can convert it to a proper date and time with some functions. The counter can be battery backed-up. Perfect enough for a real-time clock. I will power it from a supercap, like in Dallas's design. Hopefully it will hold a charge for many months. If not, I might have to change the design again, to use a normal battery with a diode. First I'll build it on a breadboard to test it out somewhat.
+
+The chip also has a kind of alarm function. Basically we can program it to give a /INT pulse after 1, 4, 32, 64, 2048, 4096, 65536, or 131072 seconds. Not of too much use, but as we also have one input-only GPIO left, we can connect the INT to it. Fortunately the input-only GPIO is GPIO14, which is one of the so-called RTC-GPIO and can be used to wake up the ESP32 from deep sleep. I don't have any idea for what we could use it. But it fills up the last unused GPIO pin, and it's a fitting for a complete feature-freeze and release of the hardware.
+
+So said, so done (Dutch proverb). It was a bit of a tight squeeze because of the supercap battery's size. And I have always tried to make sure that the AUDIO_PWM is not close to any of the high-speed signals to prevent crosstalk (which would be hearable in the audio), so I had to lay that out differently as well. Hopefully crosstalk from the video into the audio track will still be next-to-nonexistent.
+
+So now we are here:
+
+<img width="1818" alt="Screenshot 2025-05-23 at 11 27 28" src="https://github.com/user-attachments/assets/9a63f8f6-6236-4865-a0c3-fd630d14c377" />
+<img width="1211" alt="Screenshot 2025-05-23 at 11 28 12" src="https://github.com/user-attachments/assets/35e091cb-8858-4227-a7e2-b4f4d4147348" />
+
+# License
 
 THIS IS A WORK IN PROGESS! I.E. UNLESS STATED AS WORKING, ASSUME THAT IT DOES NOT WORK! (but it's looking real good ;))
 
