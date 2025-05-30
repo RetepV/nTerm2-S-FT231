@@ -1,0 +1,214 @@
+(footprint "CP_EIA-3216-18_Kemet-A_Pad1.58x1.35mm_HandSolder"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(descr "Tantalum Capacitor SMD Kemet-A (3216-18 Metric), IPC_7351 nominal, (Body size from: http://www.kemet.com/Lists/ProductCatalog/Attachments/253/KEM_TC101_STD.pdf), generated with kicad-footprint-generator")
+	(tags "capacitor tantalum")
+	(property "Reference" "REF**"
+		(at -0.4845 1.651 180)
+		(layer "F.SilkS")
+		(uuid "79d30e5b-29fd-4baf-a9b4-f4b49b9d99ff")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "1u"
+		(at 0 1.75 180)
+		(layer "F.Fab")
+		(uuid "c7be0b2d-6c85-4d65-adb5-22a0ff160883")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "26748a83-713f-4f66-a1ec-8b79116708d9")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" "Polarized capacitor"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "d81c0a7f-52e8-4b25-a6a1-8f759be2a348")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_line
+		(start -2.485 -0.935)
+		(end -2.485 0.935)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "c213ee70-ba85-464c-8af6-71ca462633c4")
+	)
+	(fp_line
+		(start -2.485 0.935)
+		(end 1.6 0.935)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "09a89d71-449e-4b39-b88f-5b427b196820")
+	)
+	(fp_line
+		(start 1.6 -0.935)
+		(end -2.485 -0.935)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "fb027853-3fe5-4c07-9bc6-c7c3e77e5cba")
+	)
+	(fp_line
+		(start -2.48 -1.05)
+		(end 2.48 -1.05)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "a7d4e93b-a8e8-4323-9512-00978a08371f")
+	)
+	(fp_line
+		(start -2.48 1.05)
+		(end -2.48 -1.05)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "400af363-9856-4f23-96cb-cae65aa4c300")
+	)
+	(fp_line
+		(start 2.48 -1.05)
+		(end 2.48 1.05)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "a86acb32-f4ad-4559-822c-c234546c566a")
+	)
+	(fp_line
+		(start 2.48 1.05)
+		(end -2.48 1.05)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "caebaa21-947c-4354-be6d-f1c0fdb0a4df")
+	)
+	(fp_line
+		(start -1.6 -0.4)
+		(end -1.6 0.8)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "61f6aec7-d1cf-46a7-a623-33e0de470faa")
+	)
+	(fp_line
+		(start -1.6 0.8)
+		(end 1.6 0.8)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "e2c0ab69-e982-407a-b902-5a3c2abd5cb6")
+	)
+	(fp_line
+		(start -1.2 -0.8)
+		(end -1.6 -0.4)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "f035c3ca-6878-48df-a11c-3bb7ac46f18f")
+	)
+	(fp_line
+		(start 1.6 -0.8)
+		(end -1.2 -0.8)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "f1f4871f-b279-44ba-8cdf-5058f377f900")
+	)
+	(fp_line
+		(start 1.6 0.8)
+		(end 1.6 -0.8)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "d55563e7-1e8b-4281-a803-b28869753661")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0 180)
+		(layer "F.Fab")
+		(uuid "60e6fc3b-3088-4d80-9396-01ecca86456a")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.12)
+			)
+		)
+	)
+	(pad "1" smd roundrect
+		(at -1.4375 0)
+		(size 1.575 1.35)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.185185)
+		(uuid "b3d94a6a-7c4b-42de-9a23-c9cc9852eb57")
+	)
+	(pad "2" smd roundrect
+		(at 1.4375 0)
+		(size 1.575 1.35)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.185185)
+		(uuid "4cc740de-d0a6-4633-a0d3-745ff4653715")
+	)
+	(embedded_fonts no)
+	(model "${KICAD8_3DMODEL_DIR}/Capacitor_Tantalum_SMD.3dshapes/CP_EIA-3216-18_Kemet-A.wrl"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

@@ -2,4 +2,5 @@
   (version 7)
   (lib (name "2137160001")(type "KiCad")(uri "/Users/retepv/Projects/Kicad/nTerm2-S/footprints/2137160001.pretty")(options "")(descr ""))
   (lib (name "Library")(type "KiCad")(uri "${KIPRJMOD}/Library/Library.pretty")(options "")(descr ""))
+  (lib (name "nTerm2-S")(type "KiCad")(uri "${KIPRJMOD}/Library/nTerm2-S.pretty")(options "")(descr ""))
 )

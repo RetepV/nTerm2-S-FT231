@@ -13,7 +13,7 @@
 		(comment 2 "© 2025 Sporos Tech ₍^•_•^₎ﾉ")
 	)
 	(lib_symbols
-		(symbol "Library:+3V3"
+		(symbol "nTerm2-S:+3V3"
 			(power)
 			(pin_numbers
 				(hide yes)
@@ -138,7 +138,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Library:+5V"
+		(symbol "nTerm2-S:+5V"
 			(power)
 			(pin_numbers
 				(hide yes)
@@ -263,7 +263,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Library:1N5819"
+		(symbol "nTerm2-S:1N5819"
 			(pin_numbers
 				(hide yes)
 			)
@@ -413,7 +413,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Library:AudioJack2_Ground_Switch"
+		(symbol "nTerm2-S:AudioJack2_Ground_Switch"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -670,7 +670,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Library:BAT43W-V"
+		(symbol "nTerm2-S:BAT43W-V"
 			(pin_numbers
 				(hide yes)
 			)
@@ -820,7 +820,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Library:BC817"
+		(symbol "nTerm2-S:BC817"
 			(pin_names
 				(offset 0)
 				(hide yes)
@@ -1025,7 +1025,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Library:C"
+		(symbol "nTerm2-S:C"
 			(pin_numbers
 				(hide yes)
 			)
@@ -1164,7 +1164,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Library:CK_KMS2xxGP"
+		(symbol "nTerm2-S:CK_KMS2xxGP"
 			(pin_names
 				(offset 1.016)
 				(hide yes)
@@ -1375,7 +1375,220 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Library:C_Polarized"
+		(symbol "nTerm2-S:CR2032_Battery_Holder"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "BAT"
+				(at 4.826 -0.254 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "CR2032_Battery_Holder_0_1"
+				(polyline
+					(pts
+						(xy -2.286 -2.032) (xy -2.286 -1.016)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.778 -1.524) (xy -2.794 -1.524)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 -0.508) (xy -1.27 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0.508) (xy 0 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -0.508) (xy 1.27 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start 1.524 0.254)
+					(end -1.524 0.762)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(rectangle
+					(start 2.286 -0.508)
+					(end -2.286 -0.254)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.286 -2.032) (xy 2.286 -1.016)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.794 -1.524) (xy 1.778 -1.524)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "CR2032_Battery_Holder_1_1"
+				(pin passive line
+					(at -1.27 -3.81 90)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 3.81 270)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 1.27 -3.81 90)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "nTerm2-S:C_Polarized"
 			(pin_numbers
 				(hide yes)
 			)
@@ -1536,7 +1749,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Library:Conn_01x02"
+		(symbol "nTerm2-S:Conn_01x02"
 			(pin_names
 				(offset 1.016)
 				(hide yes)
@@ -1678,7 +1891,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Library:Crystal"
+		(symbol "nTerm2-S:Crystal"
 			(pin_numbers
 				(hide yes)
 			)
@@ -1851,7 +2064,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Library:DE15_Receptacle_HighDensity_MountingHoles"
+		(symbol "nTerm2-S:DE15_Receptacle_HighDensity_MountingHoles"
 			(pin_names
 				(offset 1.016)
 				(hide yes)
@@ -2451,7 +2664,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Library:DE9_Plug_MountingHoles"
+		(symbol "nTerm2-S:DE9_Plug_MountingHoles"
 			(pin_names
 				(offset 1.016)
 				(hide yes)
@@ -2925,7 +3138,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Library:DS2417"
+		(symbol "nTerm2-S:DS2417"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -3106,7 +3319,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Library:ESP32-WROOM-32"
+		(symbol "nTerm2-S:ESP32-WROOM-32"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -3896,7 +4109,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Library:FT231XS"
+		(symbol "nTerm2-S:FT231XS"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -4340,7 +4553,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Library:GND"
+		(symbol "nTerm2-S:GND"
 			(power)
 			(pin_numbers
 				(hide yes)
@@ -4441,212 +4654,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Library:Gold Cap"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0.254)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "E"
-				(at -2.286 3.302 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Value" "1.0F"
-				(at -5.08 -3.048 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Footprint" "Sporos_Tech_Footprints:Gold Cap C-Type"
-				(at 0.9652 -3.81 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Gold cap"
-				(at -0.762 -5.08 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "cap capacitor"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "C_*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "Gold Cap_1_1"
-				(polyline
-					(pts
-						(xy -3.302 -1.016) (xy -3.302 2.032)
-					)
-					(stroke
-						(width 0.254)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -3.302 -1.016) (xy 3.302 -1.016)
-					)
-					(stroke
-						(width 0.254)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 0) (xy -2.54 0) (xy -2.54 1.016) (xy 2.54 1.016) (xy 2.54 0) (xy -0.254 0) (xy 0 0)
-					)
-					(stroke
-						(width 0)
-						(type solid)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.762 2.54) (xy 1.778 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.762 -2.54) (xy 1.778 -2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 3.048) (xy 1.27 2.032)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 3.302 -1.016) (xy 3.302 2.032)
-					)
-					(stroke
-						(width 0.254)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(text "Supercap"
-					(at 4.572 0 900)
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 3.81 270)
-					(length 2.794)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -3.81 90)
-					(length 2.794)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "Library:IM41"
+		(symbol "nTerm2-S:IM41"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -5191,7 +5199,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Library:LED pins reversed"
+		(symbol "nTerm2-S:LED pins reversed"
 			(pin_numbers
 				(hide yes)
 			)
@@ -5365,7 +5373,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Library:LED_Dual_AKAK"
+		(symbol "nTerm2-S:LED_Dual_AKAK"
 			(pin_names
 				(offset 0)
 				(hide yes)
@@ -5643,7 +5651,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Library:LM386"
+		(symbol "nTerm2-S:LM386"
 			(pin_names
 				(offset 0.127)
 			)
@@ -5875,7 +5883,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Library:MAX3232E"
+		(symbol "nTerm2-S:MAX3232E"
 			(pin_names
 				(offset 1.016)
 			)
@@ -6469,7 +6477,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Library:Mini-DIN-6-alt"
+		(symbol "nTerm2-S:Mini-DIN-6-alt"
 			(pin_names
 				(offset 1.016)
 			)
@@ -6890,7 +6898,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Library:MountingHole"
+		(symbol "nTerm2-S:MountingHole"
 			(pin_names
 				(offset 1.016)
 			)
@@ -6973,7 +6981,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Library:NCP1117-3.3_SOT223"
+		(symbol "nTerm2-S:NCP1117-3.3_SOT223"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -7110,7 +7118,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Library:PWR_FLAG"
+		(symbol "nTerm2-S:PWR_FLAG"
 			(power)
 			(pin_numbers
 				(hide yes)
@@ -7211,7 +7219,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Library:R"
+		(symbol "nTerm2-S:R"
 			(pin_numbers
 				(hide yes)
 			)
@@ -7335,7 +7343,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Library:SolderJumper_3_Open"
+		(symbol "nTerm2-S:SolderJumper_3_Open"
 			(pin_names
 				(offset 0)
 				(hide yes)
@@ -7583,7 +7591,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Library:USBLC6-2SC6"
+		(symbol "nTerm2-S:USBLC6-2SC6"
 			(pin_names
 				(hide yes)
 			)
@@ -8030,7 +8038,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Library:USB_C_Receptacle_USB2.0_16P"
+		(symbol "nTerm2-S:USB_C_Receptacle_USB2.0_16P"
 			(pin_names
 				(offset 1.016)
 			)
@@ -8959,12 +8967,6 @@
 		(uuid "5cc3ef64-6c26-4b2d-be3f-2096e3e6cb86")
 	)
 	(junction
-		(at 245.11 168.91)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "5d53a161-b612-49ed-b344-07e1e345323e")
-	)
-	(junction
 		(at 351.79 220.98)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -9432,6 +9434,12 @@
 		(color 0 0 0 0)
 		(uuid "fd3e3880-8b77-4500-8668-efbec98b9515")
 	)
+	(junction
+		(at 245.11 168.91)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "fe44a50f-25b5-4c98-a0a3-2801131d02e5")
+	)
 	(no_connect
 		(at 364.49 35.56)
 		(uuid "006a9a71-a452-4425-8814-ac9512be366b")
@@ -9475,6 +9483,10 @@
 	(no_connect
 		(at 364.49 55.88)
 		(uuid "40b98f2d-7e8a-4cc8-8abf-476fb20f7318")
+	)
+	(no_connect
+		(at 260.35 171.45)
+		(uuid "512efdde-60c4-4de9-a114-54b92e8f0bc9")
 	)
 	(no_connect
 		(at 321.31 119.38)
@@ -10824,6 +10836,16 @@
 	)
 	(wire
 		(pts
+			(xy 245.11 168.91) (xy 248.92 168.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "49cfcadc-1ddb-4daf-afde-2ae03b9bc52f")
+	)
+	(wire
+		(pts
 			(xy 351.79 160.02) (xy 351.79 165.1)
 		)
 		(stroke
@@ -11144,7 +11166,7 @@
 	)
 	(wire
 		(pts
-			(xy 267.97 168.91) (xy 267.97 177.8)
+			(xy 267.97 170.18) (xy 267.97 177.8)
 		)
 		(stroke
 			(width 0)
@@ -12584,6 +12606,16 @@
 	)
 	(wire
 		(pts
+			(xy 256.54 168.91) (xy 260.35 168.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ae8ce92c-502f-45e9-b9d8-fc3b9d8d20dc")
+	)
+	(wire
+		(pts
 			(xy 83.82 227.33) (xy 83.82 233.68)
 		)
 		(stroke
@@ -13201,16 +13233,6 @@
 			(type default)
 		)
 		(uuid "cfc2190f-5d8c-460a-b834-9a44be46476d")
-	)
-	(wire
-		(pts
-			(xy 245.11 168.91) (xy 260.35 168.91)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "cff78c7a-69de-442e-94d6-ade7a7048fe6")
 	)
 	(wire
 		(pts
@@ -15609,7 +15631,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Library:R")
+		(lib_id "nTerm2-S:R")
 		(at 53.34 191.77 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -15676,7 +15698,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Library:R")
+		(lib_id "nTerm2-S:R")
 		(at 48.26 43.18 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -15743,7 +15765,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Library:C_Polarized")
+		(lib_id "nTerm2-S:C_Polarized")
 		(at 80.01 227.33 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -15810,7 +15832,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Library:R")
+		(lib_id "nTerm2-S:R")
 		(at 339.09 36.83 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -15877,7 +15899,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Library:R")
+		(lib_id "nTerm2-S:R")
 		(at 48.26 74.93 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -15944,7 +15966,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Library:R")
+		(lib_id "nTerm2-S:R")
 		(at 161.29 60.96 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -16014,7 +16036,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Library:R")
+		(lib_id "nTerm2-S:R")
 		(at 43.18 33.02 180)
 		(unit 1)
 		(exclude_from_sim no)
@@ -16081,7 +16103,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Library:MountingHole")
+		(lib_id "nTerm2-S:MountingHole")
 		(at 369.57 247.65 0)
 		(unit 1)
 		(exclude_from_sim yes)
@@ -16145,7 +16167,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Library:R")
+		(lib_id "nTerm2-S:R")
 		(at 369.57 45.72 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -16212,7 +16234,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Library:C")
+		(lib_id "nTerm2-S:C")
 		(at 264.16 177.8 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -16279,7 +16301,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Library:PWR_FLAG")
+		(lib_id "nTerm2-S:PWR_FLAG")
 		(at 76.2 158.75 180)
 		(unit 1)
 		(exclude_from_sim no)
@@ -16345,7 +16367,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Library:+5V")
+		(lib_id "nTerm2-S:+5V")
 		(at 147.32 163.83 0)
 		(mirror y)
 		(unit 1)
@@ -16412,7 +16434,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Library:LED_Dual_AKAK")
+		(lib_id "nTerm2-S:LED_Dual_AKAK")
 		(at 66.04 182.88 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -16486,7 +16508,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Library:R")
+		(lib_id "nTerm2-S:R")
 		(at 142.24 163.83 90)
 		(mirror x)
 		(unit 1)
@@ -16556,7 +16578,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Library:+3V3")
+		(lib_id "nTerm2-S:+3V3")
 		(at 195.58 21.59 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -16622,7 +16644,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Library:+3V3")
+		(lib_id "nTerm2-S:+3V3")
 		(at 248.92 49.53 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -16688,7 +16710,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Library:LED_Dual_AKAK")
+		(lib_id "nTerm2-S:LED_Dual_AKAK")
 		(at 66.04 194.31 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -16762,7 +16784,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Library:C_Polarized")
+		(lib_id "nTerm2-S:C_Polarized")
 		(at 242.57 30.48 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -16829,7 +16851,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Library:1N5819")
+		(lib_id "nTerm2-S:1N5819")
 		(at 53.34 114.3 180)
 		(unit 1)
 		(exclude_from_sim no)
@@ -16897,7 +16919,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Library:Conn_01x02")
+		(lib_id "nTerm2-S:Conn_01x02")
 		(at 367.03 127 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -16966,7 +16988,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Library:C_Polarized")
+		(lib_id "nTerm2-S:C_Polarized")
 		(at 80.01 217.17 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -17033,7 +17055,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Library:R")
+		(lib_id "nTerm2-S:R")
 		(at 77.47 57.15 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -17103,7 +17125,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Library:C_Polarized")
+		(lib_id "nTerm2-S:C_Polarized")
 		(at 80.01 233.68 270)
 		(unit 1)
 		(exclude_from_sim no)
@@ -17170,7 +17192,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Library:BC817")
+		(lib_id "nTerm2-S:BC817")
 		(at 349.25 231.14 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -17246,7 +17268,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Library:R")
+		(lib_id "nTerm2-S:R")
 		(at 339.09 46.99 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -17313,7 +17335,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Library:R")
+		(lib_id "nTerm2-S:R")
 		(at 162.56 132.08 270)
 		(unit 1)
 		(exclude_from_sim no)
@@ -17381,7 +17403,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Library:MountingHole")
+		(lib_id "nTerm2-S:MountingHole")
 		(at 364.49 247.65 0)
 		(unit 1)
 		(exclude_from_sim yes)
@@ -17445,7 +17467,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Library:R")
+		(lib_id "nTerm2-S:R")
 		(at 43.18 69.85 180)
 		(unit 1)
 		(exclude_from_sim no)
@@ -17512,7 +17534,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Library:GND")
+		(lib_id "nTerm2-S:GND")
 		(at 195.58 106.68 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -17577,7 +17599,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Library:C_Polarized")
+		(lib_id "nTerm2-S:C_Polarized")
 		(at 127 99.06 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -17644,7 +17666,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Library:R")
+		(lib_id "nTerm2-S:R")
 		(at 248.92 54.61 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -17713,7 +17735,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Library:R")
+		(lib_id "nTerm2-S:R")
 		(at 173.99 29.21 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -17783,7 +17805,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Library:FT231XS")
+		(lib_id "nTerm2-S:FT231XS")
 		(at 118.11 137.16 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -17907,7 +17929,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Library:C_Polarized")
+		(lib_id "nTerm2-S:C_Polarized")
 		(at 356.87 160.02 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -17974,7 +17996,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Library:R")
+		(lib_id "nTerm2-S:R")
 		(at 274.32 109.22 270)
 		(unit 1)
 		(exclude_from_sim no)
@@ -18043,7 +18065,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Library:R")
+		(lib_id "nTerm2-S:R")
 		(at 48.26 80.01 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -18110,7 +18132,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Library:GND")
+		(lib_id "nTerm2-S:GND")
 		(at 337.82 232.41 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -18176,7 +18198,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Library:+3V3")
+		(lib_id "nTerm2-S:+3V3")
 		(at 59.69 215.9 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -18242,7 +18264,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Library:R")
+		(lib_id "nTerm2-S:R")
 		(at 39.37 33.02 180)
 		(unit 1)
 		(exclude_from_sim no)
@@ -18309,7 +18331,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Library:C_Polarized")
+		(lib_id "nTerm2-S:C_Polarized")
 		(at 356.87 220.98 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -18376,7 +18398,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Library:+5V")
+		(lib_id "nTerm2-S:+5V")
 		(at 19.05 71.12 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -18442,7 +18464,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Library:BAT43W-V")
+		(lib_id "nTerm2-S:BAT43W-V")
 		(at 240.03 168.91 180)
 		(unit 1)
 		(exclude_from_sim no)
@@ -18510,7 +18532,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Library:C")
+		(lib_id "nTerm2-S:C")
 		(at 82.55 148.59 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -18577,7 +18599,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Library:BAT43W-V")
+		(lib_id "nTerm2-S:BAT43W-V")
 		(at 342.9 175.26 270)
 		(unit 1)
 		(exclude_from_sim no)
@@ -18647,7 +18669,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Library:CK_KMS2xxGP")
+		(lib_id "nTerm2-S:CK_KMS2xxGP")
 		(at 193.04 137.16 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -18718,7 +18740,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Library:GND")
+		(lib_id "nTerm2-S:GND")
 		(at 118.11 165.1 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -18783,7 +18805,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Library:C_Polarized")
+		(lib_id "nTerm2-S:C_Polarized")
 		(at 39.37 226.06 270)
 		(unit 1)
 		(exclude_from_sim no)
@@ -18850,7 +18872,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Library:C_Polarized")
+		(lib_id "nTerm2-S:C_Polarized")
 		(at 120.65 99.06 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -18917,7 +18939,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Library:R")
+		(lib_id "nTerm2-S:R")
 		(at 39.37 69.85 180)
 		(unit 1)
 		(exclude_from_sim no)
@@ -18984,7 +19006,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Library:PWR_FLAG")
+		(lib_id "nTerm2-S:PWR_FLAG")
 		(at 76.2 107.95 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -19050,7 +19072,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Library:C")
+		(lib_id "nTerm2-S:C")
 		(at 284.48 123.19 180)
 		(unit 1)
 		(exclude_from_sim no)
@@ -19117,7 +19139,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Library:C")
+		(lib_id "nTerm2-S:C")
 		(at 110.49 57.15 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -19184,7 +19206,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Library:R")
+		(lib_id "nTerm2-S:R")
 		(at 132.08 163.83 90)
 		(mirror x)
 		(unit 1)
@@ -19254,7 +19276,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Library:C_Polarized")
+		(lib_id "nTerm2-S:C_Polarized")
 		(at 64.77 148.59 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -19321,7 +19343,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Library:BC817")
+		(lib_id "nTerm2-S:BC817")
 		(at 332.74 193.04 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -19395,7 +19417,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Library:BC817")
+		(lib_id "nTerm2-S:BC817")
 		(at 332.74 162.56 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -19469,7 +19491,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Library:AudioJack2_Ground_Switch")
+		(lib_id "nTerm2-S:AudioJack2_Ground_Switch")
 		(at 367.03 111.76 0)
 		(mirror y)
 		(unit 1)
@@ -19548,7 +19570,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Library:C_Polarized")
+		(lib_id "nTerm2-S:C_Polarized")
 		(at 323.85 96.52 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -19615,7 +19637,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Library:R")
+		(lib_id "nTerm2-S:R")
 		(at 162.56 152.4 270)
 		(unit 1)
 		(exclude_from_sim no)
@@ -19683,7 +19705,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Library:C_Polarized")
+		(lib_id "nTerm2-S:C_Polarized")
 		(at 350.52 111.76 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -19751,7 +19773,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Library:R")
+		(lib_id "nTerm2-S:R")
 		(at 53.34 185.42 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -19818,7 +19840,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Library:R")
+		(lib_id "nTerm2-S:R")
 		(at 148.59 29.21 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -19888,7 +19910,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Library:GND")
+		(lib_id "nTerm2-S:GND")
 		(at 127 104.14 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -19953,7 +19975,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Library:BC817")
+		(lib_id "nTerm2-S:BC817")
 		(at 172.72 152.4 0)
 		(mirror x)
 		(unit 1)
@@ -20029,7 +20051,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Library:BAT43W-V")
+		(lib_id "nTerm2-S:BAT43W-V")
 		(at 342.9 236.22 270)
 		(unit 1)
 		(exclude_from_sim no)
@@ -20099,7 +20121,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Library:BC817")
+		(lib_id "nTerm2-S:BC817")
 		(at 172.72 132.08 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -20175,7 +20197,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Library:MountingHole")
+		(lib_id "nTerm2-S:MountingHole")
 		(at 384.81 247.65 0)
 		(unit 1)
 		(exclude_from_sim yes)
@@ -20239,7 +20261,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Library:C")
+		(lib_id "nTerm2-S:C")
 		(at 323.85 123.19 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -20306,7 +20328,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Library:USBLC6-2SC6")
+		(lib_id "nTerm2-S:USBLC6-2SC6")
 		(at 73.66 129.54 0)
 		(mirror y)
 		(unit 1)
@@ -20391,7 +20413,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Library:C")
+		(lib_id "nTerm2-S:C")
 		(at 99.06 160.02 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -20458,7 +20480,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Library:GND")
+		(lib_id "nTerm2-S:GND")
 		(at 36.83 48.26 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -20524,7 +20546,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Library:Mini-DIN-6-alt")
+		(lib_id "nTerm2-S:Mini-DIN-6-alt")
 		(at 27.94 77.47 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -20607,7 +20629,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Library:C")
+		(lib_id "nTerm2-S:C")
 		(at 199.39 142.24 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -20674,7 +20696,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Library:BC817")
+		(lib_id "nTerm2-S:BC817")
 		(at 349.25 200.66 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -20750,7 +20772,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Library:R")
+		(lib_id "nTerm2-S:R")
 		(at 199.39 162.56 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -20820,7 +20842,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Library:R")
+		(lib_id "nTerm2-S:R")
 		(at 279.4 123.19 180)
 		(unit 1)
 		(exclude_from_sim no)
@@ -20889,7 +20911,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Library:C")
+		(lib_id "nTerm2-S:C")
 		(at 264.16 186.69 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -20956,7 +20978,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Library:DS2417")
+		(lib_id "nTerm2-S:DS2417")
 		(at 245.11 190.5 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -21038,7 +21060,75 @@
 		)
 	)
 	(symbol
-		(lib_id "Library:R")
+		(lib_id "nTerm2-S:BAT43W-V")
+		(at 252.73 168.91 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "77e948a4-3908-42ef-a008-8e45468daf45")
+		(property "Reference" "D1"
+			(at 252.4125 162.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "BAT43W-V"
+			(at 252.4125 165.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Library:D_SOD-123"
+			(at 252.73 173.355 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.vishay.com/docs/85660/bat42.pdf"
+			(at 252.73 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "30V 0.2A Small Signal Schottky diode, SOD-123"
+			(at 252.73 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "4e613de2-5f21-4e32-aee2-03c3091e3e6c")
+		)
+		(pin "1"
+			(uuid "5ab57d59-299b-4fff-928e-a09c6b389fb2")
+		)
+		(instances
+			(project "nTerm2-S FT231"
+				(path "/44921612-d8e1-466c-be95-28be93b4c71b"
+					(reference "D1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "nTerm2-S:R")
 		(at 306.07 123.19 180)
 		(unit 1)
 		(exclude_from_sim no)
@@ -21108,7 +21198,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Library:+5V")
+		(lib_id "nTerm2-S:+5V")
 		(at 326.39 189.23 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -21174,7 +21264,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Library:GND")
+		(lib_id "nTerm2-S:GND")
 		(at 337.82 171.45 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -21240,7 +21330,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Library:+3V3")
+		(lib_id "nTerm2-S:+3V3")
 		(at 119.38 52.07 270)
 		(unit 1)
 		(exclude_from_sim no)
@@ -21307,7 +21397,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Library:GND")
+		(lib_id "nTerm2-S:GND")
 		(at 73.66 153.67 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -21372,7 +21462,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Library:C_Polarized")
+		(lib_id "nTerm2-S:C_Polarized")
 		(at 58.42 148.59 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -21439,7 +21529,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Library:GND")
+		(lib_id "nTerm2-S:GND")
 		(at 224.79 259.08 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -21505,7 +21595,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Library:C_Polarized")
+		(lib_id "nTerm2-S:C_Polarized")
 		(at 148.59 43.18 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -21572,7 +21662,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Library:+5V")
+		(lib_id "nTerm2-S:+5V")
 		(at 73.66 113.03 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -21638,7 +21728,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Library:C")
+		(lib_id "nTerm2-S:C")
 		(at 199.39 172.72 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -21705,7 +21795,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Library:C_Polarized")
+		(lib_id "nTerm2-S:C_Polarized")
 		(at 236.22 30.48 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -21772,7 +21862,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Library:GND")
+		(lib_id "nTerm2-S:GND")
 		(at 59.69 261.62 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -21838,7 +21928,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Library:Crystal")
+		(lib_id "nTerm2-S:Crystal")
 		(at 256.54 190.5 270)
 		(unit 1)
 		(exclude_from_sim no)
@@ -21907,7 +21997,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Library:GND")
+		(lib_id "nTerm2-S:GND")
 		(at 347.98 64.77 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -21972,7 +22062,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Library:ESP32-WROOM-32")
+		(lib_id "nTerm2-S:ESP32-WROOM-32")
 		(at 195.58 69.85 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -22152,7 +22242,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Library:R")
+		(lib_id "nTerm2-S:R")
 		(at 93.98 132.08 90)
 		(mirror x)
 		(unit 1)
@@ -22222,7 +22312,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Library:MountingHole")
+		(lib_id "nTerm2-S:MountingHole")
 		(at 374.65 247.65 0)
 		(unit 1)
 		(exclude_from_sim yes)
@@ -22285,7 +22375,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Library:+3V3")
+		(lib_id "nTerm2-S:+3V3")
 		(at 232.41 168.91 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -22351,7 +22441,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Library:+3V3")
+		(lib_id "nTerm2-S:+3V3")
 		(at 43.18 63.5 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -22417,7 +22507,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Library:R")
+		(lib_id "nTerm2-S:R")
 		(at 332.74 123.19 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -22485,7 +22575,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Library:IM41")
+		(lib_id "nTerm2-S:IM41")
 		(at 176.53 247.65 270)
 		(unit 1)
 		(exclude_from_sim no)
@@ -22571,7 +22661,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Library:+5V")
+		(lib_id "nTerm2-S:+5V")
 		(at 19.05 34.29 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -22637,7 +22727,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Library:GND")
+		(lib_id "nTerm2-S:GND")
 		(at 161.29 76.2 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -22702,7 +22792,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Library:GND")
+		(lib_id "nTerm2-S:GND")
 		(at 74.93 198.12 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -22767,7 +22857,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Library:GND")
+		(lib_id "nTerm2-S:GND")
 		(at 148.59 48.26 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -22832,7 +22922,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Library:C_Polarized")
+		(lib_id "nTerm2-S:C_Polarized")
 		(at 356.87 190.5 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -22899,7 +22989,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Library:GND")
+		(lib_id "nTerm2-S:GND")
 		(at 242.57 39.37 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -22964,7 +23054,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Library:R")
+		(lib_id "nTerm2-S:R")
 		(at 342.9 195.58 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -23033,7 +23123,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Library:BAT43W-V")
+		(lib_id "nTerm2-S:BAT43W-V")
 		(at 342.9 205.74 270)
 		(unit 1)
 		(exclude_from_sim no)
@@ -23103,7 +23193,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Library:R")
+		(lib_id "nTerm2-S:R")
 		(at 339.09 34.29 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -23170,7 +23260,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Library:+5V")
+		(lib_id "nTerm2-S:+5V")
 		(at 326.39 219.71 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -23236,7 +23326,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Library:SolderJumper_3_Open")
+		(lib_id "nTerm2-S:SolderJumper_3_Open")
 		(at 298.45 109.22 270)
 		(mirror x)
 		(unit 1)
@@ -23307,7 +23397,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Library:BC817")
+		(lib_id "nTerm2-S:BC817")
 		(at 349.25 170.18 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -23383,7 +23473,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Library:R")
+		(lib_id "nTerm2-S:R")
 		(at 199.39 132.08 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -23453,7 +23543,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Library:GND")
+		(lib_id "nTerm2-S:GND")
 		(at 331.47 99.06 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -23519,7 +23609,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Library:C_Polarized")
+		(lib_id "nTerm2-S:C_Polarized")
 		(at 85.09 57.15 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -23586,7 +23676,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Library:C_Polarized")
+		(lib_id "nTerm2-S:C_Polarized")
 		(at 39.37 232.41 270)
 		(unit 1)
 		(exclude_from_sim no)
@@ -23653,7 +23743,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Library:C")
+		(lib_id "nTerm2-S:C")
 		(at 161.29 71.12 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -23720,7 +23810,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Library:GND")
+		(lib_id "nTerm2-S:GND")
 		(at 316.23 130.81 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -23786,7 +23876,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Library:C")
+		(lib_id "nTerm2-S:C")
 		(at 88.9 148.59 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -23853,7 +23943,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Library:R")
+		(lib_id "nTerm2-S:R")
 		(at 53.34 196.85 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -23920,7 +24010,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Library:C")
+		(lib_id "nTerm2-S:C")
 		(at 264.16 194.31 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -23987,7 +24077,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Library:R")
+		(lib_id "nTerm2-S:R")
 		(at 217.17 30.48 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -24056,7 +24146,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Library:R")
+		(lib_id "nTerm2-S:R")
 		(at 161.29 29.21 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -24126,7 +24216,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Library:GND")
+		(lib_id "nTerm2-S:GND")
 		(at 36.83 85.09 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -24192,7 +24282,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Library:MAX3232E")
+		(lib_id "nTerm2-S:MAX3232E")
 		(at 59.69 238.76 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -24305,7 +24395,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Library:+3V3")
+		(lib_id "nTerm2-S:+3V3")
 		(at 115.57 93.98 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -24371,7 +24461,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Library:Mini-DIN-6-alt")
+		(lib_id "nTerm2-S:Mini-DIN-6-alt")
 		(at 27.94 40.64 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -24454,7 +24544,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Library:R")
+		(lib_id "nTerm2-S:R")
 		(at 339.09 39.37 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -24521,7 +24611,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Library:MountingHole")
+		(lib_id "nTerm2-S:MountingHole")
 		(at 379.73 247.65 0)
 		(unit 1)
 		(exclude_from_sim yes)
@@ -24585,74 +24675,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Library:Gold Cap")
-		(at 264.16 168.91 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "c2fc23d4-b635-4f8a-b926-e30e74c7b1c5")
-		(property "Reference" "E1"
-			(at 261.366 162.052 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "1.0F"
-			(at 265.938 162.052 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Library:Gold Cap V-Type"
-			(at 267.97 167.9448 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 264.16 168.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Gold cap"
-			(at 269.24 169.672 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "14e26f72-9cd4-4688-b242-e1eafcd3aa5d")
-		)
-		(pin "2"
-			(uuid "2b8364de-e665-4162-8841-43a21a54e9c9")
-		)
-		(instances
-			(project ""
-				(path "/44921612-d8e1-466c-be95-28be93b4c71b"
-					(reference "E1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Library:GND")
+		(lib_id "nTerm2-S:GND")
 		(at 86.36 227.33 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -24718,7 +24741,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Library:DE15_Receptacle_HighDensity_MountingHoles")
+		(lib_id "nTerm2-S:DE15_Receptacle_HighDensity_MountingHoles")
 		(at 356.87 45.72 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -24743,7 +24766,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Library:DSUB-15-HD_Female_Horizontal_P2.29x1.98mm_EdgePinOffset8.35mm_Housed_MountingHolesOffset10.89mm"
+		(property "Footprint" "Sporos_Tech_Footprints:DSUB-15-HD AssMann HD 15FW"
 			(at 332.74 35.56 0)
 			(effects
 				(font
@@ -24828,7 +24851,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Library:R")
+		(lib_id "nTerm2-S:R")
 		(at 369.57 50.8 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -24895,7 +24918,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Library:R")
+		(lib_id "nTerm2-S:R")
 		(at 339.09 41.91 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -24962,7 +24985,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Library:MountingHole")
+		(lib_id "nTerm2-S:MountingHole")
 		(at 389.89 247.65 0)
 		(unit 1)
 		(exclude_from_sim yes)
@@ -25026,7 +25049,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Library:LED pins reversed")
+		(lib_id "nTerm2-S:LED pins reversed")
 		(at 77.47 66.04 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -25096,7 +25119,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Library:LM386")
+		(lib_id "nTerm2-S:LM386")
 		(at 318.77 111.76 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -25181,7 +25204,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Library:NCP1117-3.3_SOT223")
+		(lib_id "nTerm2-S:NCP1117-3.3_SOT223")
 		(at 97.79 52.07 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -25252,7 +25275,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Library:BC817")
+		(lib_id "nTerm2-S:BC817")
 		(at 332.74 223.52 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -25326,7 +25349,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Library:+3V3")
+		(lib_id "nTerm2-S:+3V3")
 		(at 43.18 26.67 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -25392,7 +25415,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Library:GND")
+		(lib_id "nTerm2-S:GND")
 		(at 256.54 199.39 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -25457,7 +25480,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Library:DE9_Plug_MountingHoles")
+		(lib_id "nTerm2-S:DE9_Plug_MountingHoles")
 		(at 224.79 240.03 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -25484,7 +25507,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Library:DSUB-9_Male_Horizontal_P2.77x2.84mm_EdgePinOffset4.94mm_Housed_MountingHolesOffset7.48mm"
+		(property "Footprint" "Connector_Dsub:DSUB-9_Pins_Horizontal_P2.77x2.84mm_EdgePinOffset7.70mm_Housed_MountingHolesOffset9.12mm"
 			(at 224.79 240.03 0)
 			(effects
 				(font
@@ -25551,7 +25574,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Library:C")
+		(lib_id "nTerm2-S:C")
 		(at 289.56 109.22 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -25619,7 +25642,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Library:C")
+		(lib_id "nTerm2-S:C")
 		(at 323.85 102.87 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -25686,7 +25709,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Library:CK_KMS2xxGP")
+		(lib_id "nTerm2-S:CK_KMS2xxGP")
 		(at 193.04 167.64 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -25757,7 +25780,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Library:C")
+		(lib_id "nTerm2-S:C")
 		(at 342.9 125.73 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -25827,7 +25850,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Library:GND")
+		(lib_id "nTerm2-S:GND")
 		(at 337.82 201.93 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -25893,7 +25916,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Library:R")
+		(lib_id "nTerm2-S:R")
 		(at 93.98 129.54 90)
 		(mirror x)
 		(unit 1)
@@ -25963,7 +25986,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Library:R")
+		(lib_id "nTerm2-S:R")
 		(at 339.09 44.45 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -26030,7 +26053,78 @@
 		)
 	)
 	(symbol
-		(lib_id "Library:IM41")
+		(lib_id "nTerm2-S:CR2032_Battery_Holder")
+		(at 264.16 170.18 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "dc23b791-36e2-425c-8861-4a91c5d0261c")
+		(property "Reference" "BAT1"
+			(at 263.5885 163.83 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "CR2032"
+			(at 263.5885 166.37 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Sporos_Tech_Footprints:TE Connectivity CR2032 V"
+			(at 264.16 170.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 264.16 170.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 264.16 170.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "824f0ea2-1bf7-436c-afae-8b6695aafbce")
+		)
+		(pin "2"
+			(uuid "0b8efa41-3e22-4d8a-b8cd-970e65e838db")
+		)
+		(pin "3"
+			(uuid "35ae2151-ac05-412e-a7c1-a21c988105cb")
+		)
+		(instances
+			(project ""
+				(path "/44921612-d8e1-466c-be95-28be93b4c71b"
+					(reference "BAT1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "nTerm2-S:IM41")
 		(at 127 255.27 270)
 		(unit 1)
 		(exclude_from_sim no)
@@ -26116,7 +26210,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Library:+5V")
+		(lib_id "nTerm2-S:+5V")
 		(at 316.23 95.25 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -26182,7 +26276,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Library:GND")
+		(lib_id "nTerm2-S:GND")
 		(at 97.79 71.12 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -26247,7 +26341,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Library:R")
+		(lib_id "nTerm2-S:R")
 		(at 342.9 226.06 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -26316,7 +26410,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Library:R")
+		(lib_id "nTerm2-S:R")
 		(at 342.9 116.84 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -26386,7 +26480,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Library:CK_KMS2xxGP")
+		(lib_id "nTerm2-S:CK_KMS2xxGP")
 		(at 154.94 66.04 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -26457,7 +26551,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Library:+5V")
+		(lib_id "nTerm2-S:+5V")
 		(at 69.85 52.07 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -26523,7 +26617,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Library:IM41")
+		(lib_id "nTerm2-S:IM41")
 		(at 127 220.98 270)
 		(unit 1)
 		(exclude_from_sim no)
@@ -26609,7 +26703,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Library:R")
+		(lib_id "nTerm2-S:R")
 		(at 48.26 38.1 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -26676,7 +26770,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Library:R")
+		(lib_id "nTerm2-S:R")
 		(at 53.34 180.34 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -26743,7 +26837,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Library:+5V")
+		(lib_id "nTerm2-S:+5V")
 		(at 326.39 158.75 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -26809,7 +26903,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Library:USB_C_Receptacle_USB2.0_16P")
+		(lib_id "nTerm2-S:USB_C_Receptacle_USB2.0_16P")
 		(at 33.02 129.54 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -26922,7 +27016,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Library:GND")
+		(lib_id "nTerm2-S:GND")
 		(at 199.39 147.32 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -26987,7 +27081,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Library:R")
+		(lib_id "nTerm2-S:R")
 		(at 342.9 165.1 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -27056,7 +27150,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Library:GND")
+		(lib_id "nTerm2-S:GND")
 		(at 199.39 177.8 0)
 		(unit 1)
 		(exclude_from_sim no)

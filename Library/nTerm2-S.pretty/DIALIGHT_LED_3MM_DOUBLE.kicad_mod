@@ -1,0 +1,172 @@
+(footprint "DIALIGHT_LED_3MM_DOUBLE"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(descr "LED, diameter 3.0mm, 2 pins")
+	(tags "LED diameter 3.0mm 2 pins")
+	(property "Reference" "REF**"
+		(at 1.2304 -2.4233 0)
+		(layer "F.SilkS")
+		(uuid "8950e29a-120e-48dc-8053-303883439e59")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "LED_Dual_AKAK"
+		(at 1.27 2.96 0)
+		(layer "F.Fab")
+		(uuid "f14de22f-195e-4249-bb7b-814ab7c0871a")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 2.54 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "30ebb6de-2765-48eb-824e-931d0d7e8013")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" "Dual LED, cathodes on pins 2 and 4"
+		(at 0 2.54 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "7fa778d9-836c-4c5b-966a-146ea249489c")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr through_hole)
+	(fp_line
+		(start -0.2 8.04)
+		(end -0.2 6.94)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "c1623841-0ca2-4867-9fdf-1b9ecf934d09")
+	)
+	(fp_line
+		(start 2.6 8.04)
+		(end 2.6 6.94)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "a865912f-d48d-42a9-911c-3d0d7600ea33")
+	)
+	(fp_arc
+		(start 2.6 8.04)
+		(mid 1.2 9.44)
+		(end -0.2 8.04)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "c3e67f61-673c-433c-8a75-345d207629f2")
+	)
+	(fp_line
+		(start -0.9125 -1.76)
+		(end -0.8875 6.94)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "0ac9c7a1-3fb8-407a-84ea-26ce5254e35b")
+	)
+	(fp_line
+		(start -0.8875 6.94)
+		(end 3.4 6.94)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "72986101-6459-45ab-8424-dd15f40d1eb0")
+	)
+	(fp_line
+		(start 3.4 -1.76)
+		(end -0.9125 -1.76)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "5452149d-33ee-4d3b-a3f5-ceb80b5a03e4")
+	)
+	(fp_line
+		(start 3.4 6.94)
+		(end 3.4 -1.76)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "a5220db4-9209-473a-bb9d-78d088c774ee")
+	)
+	(pad "1" thru_hole rect
+		(at 0 0)
+		(size 1.8 1.8)
+		(drill 0.9)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "f9a9dff3-352f-47b7-a3c2-5f04da89f229")
+	)
+	(pad "2" thru_hole circle
+		(at 2.54 0)
+		(size 1.8 1.8)
+		(drill 0.9)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "275abe4f-23af-40d9-b370-d59333da9a73")
+	)
+	(pad "3" thru_hole rect
+		(at 0 2.54)
+		(size 1.8 1.8)
+		(drill 0.9)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "299e7e50-ebcc-40dc-baac-b54c14039b1b")
+	)
+	(pad "4" thru_hole circle
+		(at 2.54 2.54)
+		(size 1.8 1.8)
+		(drill 0.9)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "be290044-9dc3-4b5b-9a8c-d0f553bd71ba")
+	)
+	(embedded_fonts no)
+	(model "${KICAD8_3DMODEL_DIR}/LED_THT.3dshapes/LED_D3.0mm.wrl"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)
