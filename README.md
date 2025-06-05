@@ -17,6 +17,16 @@ This board will run all FabGL software and examples, <ins>except</ins> the PC em
 
 # Progress
 
+5-6-2025
+
+Three things progressed.
+
+1. I decided to drop the supercap. I don't think it will last so long, they are meant to bridge short power downs, not long ones. I tested with a CR2032 and a BAT43 diode, and that works just as reliable as battery backup, but will give waaaaay more backup life.
+2. I decided to add OPT2...OPT5 solder bridges to give people the options of leaving out the resistors and driver circuits. Soldering 1-2 on the solder bridges will make the signals go through the relay circuits, i.e. have software switchable RxD/TxD, RTS/CTS, or DTR/DSR. Soldering 2-3 will connect RxD, TxD, RTS and CTS directly to the RS-232 connector. It can save you some money if you don't need the switchability, and you can always change your mind later.
+3. I also decided that This Is It. No more features, no more nothing, nTerm2-S is feature complete, and I am going to order new PCBs to see if everything actually still works. If everything works as planned, then I will consider nTerm2-S as being released. Software is hard on it's way. But if you can't wait, you can already use FabGL's AnsiTerminal example: the nTerm2-S hardware is backwards compatible.
+
+The scary part is the FT-231 circuit. I have not tested it, and have to hope that I didn't make a mistake. The other more or less scary thing is that I had to move the AUDIO_PWM track, and hope that I did not introduce a bunch of crossover. The AUDIO_PWM track had to cross over the RxD_0 and TxD_0 lines. But these are only used for the ESP32 console ouput or during updating of the firmware. So if console output is removed, there should simply be nothing to cross over.
+
 29-5-2025
 
 The real time clock survived the night on only the backup power. :) At the last moment, I decided to put a series resistor of 150 ohm with the supercap (there was none in [Dallas's reference design](https://nl.mouser.com/datasheet/2/272/rtc-4-click-manual-v100-1483841.pdf). The inrush current when the supercap is empty of charge could be quite high. It's just for a short time, but theoretically it could cause such a power dip that it would cause boot loops. I haven't measured the inrush current, but "the word" is that it could even be multiple Amperes, which could theoretically also cause a track to burn.
