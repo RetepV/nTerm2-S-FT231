@@ -801,7 +801,7 @@
       "gencad": "",
       "idf": "",
       "netlist": "",
-      "plot": "../nTerm2-S/gerbers/",
+      "plot": "JLCPCB/",
       "pos_files": "",
       "specctra_dsn": "",
       "step": "",

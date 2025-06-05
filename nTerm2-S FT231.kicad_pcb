@@ -126,7 +126,7 @@
 			(mirror no)
 			(drillshape 0)
 			(scaleselection 1)
-			(outputdirectory "../nTerm2-S/gerbers/")
+			(outputdirectory "JLCPCB/")
 		)
 	)
 	(net 0 "")
