@@ -32291,7 +32291,7 @@
 			(justify left bottom)
 		)
 	)
-	(gr_text_box "nTerm2-S v0.06 - Powered by FabGL\nMany thanks to Fabrizio Di Vittorio\nand Just4Fun!"
+	(gr_text_box "nTerm2-S v0.08 - Powered by FabGL\nMany thanks to Fabrizio Di Vittorio\nand Just4Fun!"
 		(start 110.871 100.3808)
 		(end 141.859 106.172)
 		(margins 0.8 0.8 0.8 0.8)
