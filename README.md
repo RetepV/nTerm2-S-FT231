@@ -21,6 +21,17 @@ This board will run all FabGL software and examples, <ins>except</ins> the PC em
 
 I actually ordered 5 new boards from JLCPCB on 5-6-2025 (€15,99 including shipping). They were finished and shipped on 7-6-2025. Arrived in Leipzig (Germany) on 8-6-2025. They are taking their time and still have the package in their posession on 12-6-2025. So now waiting for them to pass it over to The Netherlands so that it can be delivered to me. What I learn from this is that the Chinese are very efficient, while the Germans seem to have lost their knack. I guess I shouldn't expect anything until end of next week.
 
+Just before sending the board for manufacturing, I decided to add a few more solder bridges.
+
+OPT1: Option to choose between using the on-board audi amplifier, or leave it out completely and have line-out.
+OPT2-OPT5: Option to choose between having the null-modem switching option or not. If you don't want to use the null-modem option, you can leave out the relais and their control circuitry, and use the OPT2-OPT5 solder bridges to connect the UART directly to the RS-232 V24 connector. Note that this also removes the capability to switch between RTS/CTS and DTR/DSR.
+
+So if you want to save a bit of money and don't want to use those subcomponents, you now can solder the bridges accordingly, instead of using a bypass bodge wire.
+
+<img width="1378" alt="Screenshot 2025-06-12 at 13 13 25" src="https://github.com/user-attachments/assets/23701a7f-c75e-431a-af3f-898092846d47" />
+
+Ah, I also found out that the footprint for the VGA connector had been wrong all along. With both the prototypes, it was kind of hard to put the VGA connector pins in their holes. It turned out that the spacing was wrong. The connector would fit with a little bit of pushing, but that's not right. So I updated the footprint, and it should be good now.
+
 5-6-2025
 
 Three things progressed.
