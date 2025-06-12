@@ -17,6 +17,10 @@ This board will run all FabGL software and examples, <ins>except</ins> the PC em
 
 # Progress
 
+12-6-2025
+
+I actually ordered 5 new boards from JLCPCB on 5-6-2025 (€15,99 including shipping). They were finished and shipped on 7-6-2025. Arrived in Leipzig (Germany) on 8-6-2025. They are taking their time and still have the package in their posession on 12-6-2025. So now waiting for them to pass it over to The Netherlands so that it can be delivered to me. What I learn from this is that the Chinese are very efficient, while the Germans seem to have lost their knack. I guess I shouldn't expect anything until end of next week.
+
 5-6-2025
 
 Three things progressed.
