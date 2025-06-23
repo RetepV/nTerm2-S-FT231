@@ -30,6 +30,19 @@ Here's the final result of v0.09 (which is still without the previously mentione
 
 ![IMG_3556](https://github.com/user-attachments/assets/f6de6757-e6d9-4d1e-ba20-494609f23468)
 
+I thought it might be nice to show the equioment that I use to solder nTerm2-S. This is it. Nothing more. Ok, I also have reading glasses. ;)
+
+- A lamp with 2x magnifying glass
+- A small 10x magnifying loupe
+- A steel set of quality pincers
+- Edsyn FL-22 flux
+- A Pinecil DC5525 soldering iron with ST-BC2 tip (the short variant of the BC2)
+- A Goobay silicone soldering mat
+
+I also have a hot air station. But one of my goals is to make the nTerm2-S solderable without hot air, so I don't use it (I did need it for the CP2102, which is why I dropped that chip). I find that using hot iair is not faster than hand soldering, maybe even slower. Hot air does have the benefit though that the components will align themselves automatically. The fastest way, however, will be to use solder paste with a stencil, and bake the PCB in an SMD oven. I don't have one, so hand soldering it is. ;)
+
+![IMG_3557](https://github.com/user-attachments/assets/c9b221a6-4634-4e36-a40e-0499d594daf3)
+
 And then software. Software is coming along quite well, but I have to iron out one quite major thing. The FabGL 'canvas' class works great if you only have one source of data. But I need to render the terminal text from serial input, but also the bottom status bar, so the canvas has 2 sources of data. Canvas, however, only has one set of text properties (bold, inverse, etc.). The serial input and status bar are sharing the text properties, and so I get some random inverse letters in the terminal text, when serial data is received while I'm in the middle of rendering the status bar. I really don't want to change FabGL much, but this is a fundamental problem of Canvas. It has only one render queue, and text properties are global to Canvas and are not properties of the drawText commands that are being put in the queue. There are some different options, but all seem hacky, and I have already kind of hacked the status bar into FabGL as it currently is. I might have to take a step back and change the strategy.
 
 22-6-2025
