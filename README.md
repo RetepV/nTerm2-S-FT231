@@ -19,18 +19,19 @@ This board will run all FabGL software and examples, <ins>except</ins> the PC em
 
 23-6-2025
 
-Fixed a few small layout issues that I encountered while soldering, and submitted V0.10.
+Fixed a few small layout issues that I encountered while soldering, and then submitted as V0.10.
 
 - Fixed orientation of C19.
-- Changed orientations of R19 and C3. If you don't want the audio amplifier, you will still have to solder in the filter components R20, R21, C7 and C3. I placed C3 right under C7 now, and R19 (which does not need to be added) below that, making it more obvious what needs to be soldered.
+- Changed orientations of R19 and C3. If you don't want the audio amplifier, you will still have to solder in the filter components R20, R21, C7 and C3. I placed C3 right under C7 now, and R19 (which does not need to be added) below that, making it more obvious what needs to be soldered and what not.
+- Somehow the designation of C3 disappeared, I brought it back.
 - Tweaked the positions of the connectors so that they are flush with the PCB edge. I should have done that earlier.
 - Connected pins 2 and 3 of the CR2032 battery holder together. I didn't have the correct battery holder, so I used a wire. And looking at the PCB, pin 2 is unconnected but does mention '+' in the solder mask. Confusing, so I connected pin 2 to the other + terminal (pin 3).
 
-Here's the final result of v0.09 (which is still without the previously mentioned fixes). Next will be to add the relays, because I want those. :)
+Here's the final result of v0.09. Next will be to add the relays, because I want those. This is without the previously mentioned fixes, zoom into the picture to check out the issues.
 
 ![IMG_3556](https://github.com/user-attachments/assets/f6de6757-e6d9-4d1e-ba20-494609f23468)
 
-I thought it might be nice to show the equipment that I use to solder nTerm2-S. This is it. Nothing more. Ok, I also have reading glasses. ;)
+I thought it might be nice to show the equipment that I use to solder nTerm2-S. This is it. Nothing more (ok, I also wear reading glasses).
 
 - A lamp with 2x magnifying glass
 - A small 10x magnifying loupe
