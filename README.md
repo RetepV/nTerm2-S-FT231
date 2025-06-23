@@ -30,7 +30,7 @@ Here's the final result of v0.09 (which is still without the previously mentione
 
 ![IMG_3556](https://github.com/user-attachments/assets/f6de6757-e6d9-4d1e-ba20-494609f23468)
 
-I thought it might be nice to show the equioment that I use to solder nTerm2-S. This is it. Nothing more. Ok, I also have reading glasses. ;)
+I thought it might be nice to show the equipment that I use to solder nTerm2-S. This is it. Nothing more. Ok, I also have reading glasses. ;)
 
 - A lamp with 2x magnifying glass
 - A small 10x magnifying loupe
