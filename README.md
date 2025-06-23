@@ -17,6 +17,42 @@ This board will run all FabGL software and examples, <ins>except</ins> the PC em
 
 # Progress
 
+22-6-2025
+
+Soldered the minimum configuration of the board for working as a SporosTerm, which means: everything except the relays and their control, and the audo amplifier. Technically, the LEDs and the RTC are not necessary either, but I consider them an indispensible part of the terminal. PCB is not cleaned of flux yet, so it looks dirty.
+
+![IMG_3555](https://github.com/user-attachments/assets/65fd9f25-6c56-403b-85a5-83135e686098)
+
+Connected everything and fired it up, and everything works. FabGL's Space Invaders, AnsiTerminal, Altair 8800 work. And SporosTerm works super too. The RTC works, it kept its time overnight. 
+
+21-6-2025
+
+Soldered R39 and R40, and the FT231 is recognized. The USB wants to give us 500mA, and on-board we have a perfect 3V3. The protection diodes work fine too.
+
+![IMG_3551](https://github.com/user-attachments/assets/213bdfb8-4c9f-44f9-8cc6-10f0b6984a58)
+
+Let's solder the ESP32, the reset circuitry and the power led. Then we can test if the ESP32 can be flashed.
+
+![IMG_3553](https://github.com/user-attachments/assets/bc310b4d-c09f-49be-bbeb-749978afa96a)
+
+Yep. Flashing works.
+
+![IMG_3554](https://github.com/user-attachments/assets/1700545f-c709-4649-a98f-5e19831cd6a7)
+
+20-6-2025
+
+Soldering commences, the FT231 solders really easily, that's a success! I did find one sloppyness on my side, C19 is rotated the wrong way. Of course it works just as fine in this orientation, but for sure people will accidentally solder it in the wrong way, as all the other C's are oriented the other way. That needs to be fixed in a V0.10, but it's cosmetic so no risk of breaking something.
+
+Then life came in the way before I was able to solder R39 and R40, so I can't test yet.
+
+![IMG_3543](https://github.com/user-attachments/assets/c4ece7f1-b313-4cb4-95b0-d104e04dac6d)
+
+18-6-2025
+
+Received the new PCBs today. Won't be able to solder them as yet, other things have priority. :)
+
+![IMG_3540](https://github.com/user-attachments/assets/195ac3f1-8b6d-4705-862d-0615a4c6ab90)
+
 12-6-2025
 
 I actually ordered 5 new boards from JLCPCB on 5-6-2025 (€15,99 including shipping). They were finished and shipped on 7-6-2025. Arrived in Leipzig (Germany) on 8-6-2025. They are taking their time and still have the package in their posession on 12-6-2025. So now waiting for them to pass it over to The Netherlands so that it can be delivered to me. What I learn from this is that the Chinese are very efficient, while the Germans seem to have lost their knack. I guess I shouldn't expect anything until end of next week.
