@@ -17,6 +17,21 @@ This board will run all FabGL software and examples, <ins>except</ins> the PC em
 
 # Progress
 
+23-6-2025
+
+Fixed a few small layout issues that I encountered while soldering, and submitted V0.10.
+
+- Fixed orientation of C19.
+- Changed orientations of R19 and C3. If you don't want the audio amplifier, you will still have to solder in the filter components R20, R21, C7 and C3. I placed C3 right under C7 now, and R19 (which does not need to be added) below that, making it more obvious what needs to be soldered.
+- Tweaked the positions of the connectors so that they are flush with the PCB edge. I should have done that earlier.
+- Connected pins 2 and 3 of the CR2032 battery holder together. I didn't have the correct battery holder, so I used a wire. And looking at the PCB, pin 2 is unconnected but does mention '+' in the solder mask. Confusing, so I connected pin 2 to the other + terminal (pin 3).
+
+Here's the final result of v0.09 (which is still without the previously mentioned fixes). Next will be to add the relays, because I want those. :)
+
+![IMG_3556](https://github.com/user-attachments/assets/f6de6757-e6d9-4d1e-ba20-494609f23468)
+
+And then software. Software is coming along quite well, but I have to iron out one quite major thing. The FabGL 'canvas' class works great if you only have one source of data. But I need to render the terminal text from serial input, but also the bottom status bar, so the canvas has 2 sources of data. Canvas, however, only has one set of text properties (bold, inverse, etc.). The serial input and status bar are sharing the text properties, and so I get some random inverse letters in the terminal text, when serial data is received while I'm in the middle of rendering the status bar. I really don't want to change FabGL much, but this is a fundamental problem of Canvas. It has only one render queue, and text properties are global to Canvas and are not properties of the drawText commands that are being put in the queue. There are some different options, but all seem hacky, and I have already kind of hacked the status bar into FabGL as it currently is. I might have to take a step back and change the strategy.
+
 22-6-2025
 
 Soldered the minimum configuration of the board for working as a SporosTerm, which means: everything except the relays and their control, and the audo amplifier. Technically, the LEDs and the RTC are not necessary either, but I consider them an indispensible part of the terminal. PCB is not cleaned of flux yet, so it looks dirty.
