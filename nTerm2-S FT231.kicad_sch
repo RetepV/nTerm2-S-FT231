@@ -6,8 +6,8 @@
 	(paper "A3")
 	(title_block
 		(title "nTerm2-s")
-		(date "2025-06-05")
-		(rev "0.09")
+		(date "2025-06-23")
+		(rev "0.10")
 		(company "Sporos Tech ₍^•_•^₎ﾉ")
 		(comment 1 "Peter de Vroomen")
 		(comment 2 "© 2025 Sporos Tech ₍^•_•^₎ﾉ")
@@ -8991,6 +8991,12 @@
 		(uuid "5cc3ef64-6c26-4b2d-be3f-2096e3e6cb86")
 	)
 	(junction
+		(at 259.08 168.91)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "5e96831f-4369-4223-8f6c-9820cb3e7348")
+	)
+	(junction
 		(at 351.79 220.98)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -9515,10 +9521,6 @@
 		(uuid "40b98f2d-7e8a-4cc8-8abf-476fb20f7318")
 	)
 	(no_connect
-		(at 260.35 171.45)
-		(uuid "512efdde-60c4-4de9-a114-54b92e8f0bc9")
-	)
-	(no_connect
 		(at 321.31 119.38)
 		(uuid "7ee42db4-e1b2-4c92-9493-357953453a13")
 	)
@@ -9653,6 +9655,16 @@
 			(type default)
 		)
 		(uuid "048884c5-8f53-4fff-9609-e84e173a3d49")
+	)
+	(wire
+		(pts
+			(xy 259.08 168.91) (xy 259.08 171.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "04c98271-03cc-4a1b-9268-ac641b67b1cc")
 	)
 	(wire
 		(pts
@@ -10556,6 +10568,16 @@
 	)
 	(wire
 		(pts
+			(xy 259.08 168.91) (xy 260.35 168.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "35371b72-b494-4e41-a309-495100aebf03")
+	)
+	(wire
+		(pts
 			(xy 193.04 176.53) (xy 199.39 176.53)
 		)
 		(stroke
@@ -11373,6 +11395,16 @@
 			(type default)
 		)
 		(uuid "60aed730-9c1b-41ee-97d1-a640741c7b69")
+	)
+	(wire
+		(pts
+			(xy 260.35 171.45) (xy 259.08 171.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "60cc0c80-4ec7-441c-9111-80cdbc4a104a")
 	)
 	(wire
 		(pts
@@ -12726,7 +12758,7 @@
 	)
 	(wire
 		(pts
-			(xy 256.54 168.91) (xy 260.35 168.91)
+			(xy 256.54 168.91) (xy 259.08 168.91)
 		)
 		(stroke
 			(width 0)
@@ -25230,7 +25262,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Sporos_Tech_Footprints:DSUB-15-HD AssMann HD 15FW"
+		(property "Footprint" "'nTerm2-S:DSUB-15-HD AssMann HD 15FW"
 			(at 332.74 35.56 0)
 			(effects
 				(font
@@ -25971,7 +26003,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Connector_Dsub:DSUB-9_Pins_Horizontal_P2.77x2.84mm_EdgePinOffset7.70mm_Housed_MountingHolesOffset9.12mm"
+		(property "Footprint" "nTerm2-S:DSUB-9_Pins_Horizontal_P2.77x2.84mm_EdgePinOffset7.70mm_Housed_MountingHolesOffset9.12mm"
 			(at 224.79 240.03 0)
 			(effects
 				(font
@@ -26542,7 +26574,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Sporos_Tech_Footprints:TE Connectivity CR2032 V"
+		(property "Footprint" "nTerm2-S:TE Connectivity CR2032 V"
 			(at 264.16 170.18 0)
 			(effects
 				(font
