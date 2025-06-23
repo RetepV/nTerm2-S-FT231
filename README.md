@@ -37,7 +37,9 @@ I thought it might be nice to show the equipment that I use to solder nTerm2-S. 
 - A steel set of quality pincers
 - Edsyn FL-22 flux
 - A Pinecil DC5525 soldering iron with ST-BC2 tip (the short variant of the BC2)
+- 0.5mm 60/40 rosin-core solder
 - A Goobay silicone soldering mat
+- Forgot to picture: [a benchtop solder fume extractor](https://www.reichelt.com/nl/nl/shop/product/soldeerdamp-filtersysteem_zd-153_1m_min-90929?PROVID=2809&gad_source=1&gad_campaignid=22421704484&gclid=CjwKCAjw9uPCBhATEiwABHN9KxTfvpmQ8-ziKVJnDUi2Y7wfs4gk6s1T8yYnybVX92MnH0qx3_6JcRoCZEIQAvD_BwE), the most basic type
 
 I also have a hot air station. But one of my goals is to make the nTerm2-S solderable without hot air, so I don't use it (I did need it for the CP2102, which is why I dropped that chip). I find that using hot iair is not faster than hand soldering, maybe even slower. Hot air does have the benefit though that the components will align themselves automatically. The fastest way, however, will be to use solder paste with a stencil, and bake the PCB in an SMD oven. I don't have one, so hand soldering it is. ;)
 
