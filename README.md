@@ -17,6 +17,21 @@ This board will run all FabGL software and examples, <ins>except</ins> the PC em
 
 # Progress
 
+25-10-2025
+
+The last update was quite some time ago. I have been struggling with both time to work on this project, and struggling with the rendering issue of the terminal application. Somehow the glyph options of the Status Bar would sometimes 'bleed' over to the terminal text, causing letters to appear in reverse video. I had an inkling that this was being caused by the Status Bar rendering being interrupted by serial data being received and also rendered to the screen. Serial data is being received on an interrupt basis, so this was happening. However, I did not understand why.
+
+It turns out that when we want to render a glyph on the Canvas, we use a function `drawText()`. But the glyph options (and foreground and background colors) are not passed together with the text. Instead, we use `setGlyphOptions`, `setPenColor` and `setBrushColor` to set up the parameters, and then call `drawText`, which will use the parameters that we set up. What the Canvas actually does with these calls is to post a message into a queue that will be read and processed by the DisplayController. This is necessary because the Canvas and the DisplayController code run on different cores and we need to take care of synchronising the messages: we cannot interrupt the DisplayController when we want, because that will lead to visible screen glitches. Using a queue is probably the easiest way to do this.
+
+However, **both** the Canvas and the DisplayController keep their own version of those settings, i.e. there is more than one source of truth. The sources of truth are not updated at the same time, and that means that there is always a small amount of time where both will be out of sync. And this is the reason why sometimes the text received from the RS-232 was rendered with the `glyphOptions` of the Status Bar.
+
+This is actually not so hard to fix. We just need to have only one source of truth, and pass the parameters together with the other relevant data (Glyph) through the queue. However, that would be a major fix, and actually a paradigm change. It could potentially have a lot of side effects, and I am not yet feeling up to handle that. Besides, it would be a backwards-compatibility breaking fix and so cannot be pushed back into Fabio's FabGL branch. And as I am only interested in the terminal emulation, I think I would better trip the FabGL library of all that is unnecessary and make a FabGLTerm or FabGLLite version or something. And I'm not sure if that is allowed by the license.
+
+Anyway, another way to go is to leave everything as it is and simply **add** a `drawGlyph` command that takes `glyphOptions`, `penColor` and `brushColor`, and renders the glyph with the passed parameters instead of the (doubly) stored global `glyphOptions`, `penColor` and `brushColor`, call it `drawGlyphWithOptions`, and use that call to render the Status Bar. No sooner said than done, and the glitches disappeared. Success!
+
+All the time that I was trying to work this out, I was wishing that I could connect a debugger to trace what was going on. But all the GPIO pins on the ESP32 are used for something, and there are no free pins to connect a JTAG debugger. This makes everything really hard to debug. If I make a next version of the nTerm2-S, I will choose for the ESP32 S3, which can do serial communications **and** JTAG over its USB port, making life so much easier.
+
+
 23-6-2025
 
 Fixed a few small layout issues that I encountered while soldering, and then submitted as V0.10.
