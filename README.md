@@ -31,6 +31,10 @@ Anyway, another way to go is to leave everything as it is and simply **add** a `
 
 All the time that I was trying to work this out, I was wishing that I could connect a debugger to trace what was going on. But all the GPIO pins on the ESP32 are used for something, and there are no free pins to connect a JTAG debugger. This makes everything really hard to debug. If I make a next version of the nTerm2-S, I will choose for the ESP32 S3, which can do serial communications **and** JTAG over its USB port, making life so much easier.
 
+Next steps are to clean up everything, reorganize the repository a bit, test with many more devices, and write some documentation. Possibly add a feature or two more.
+
+What I have not mentioned before, is that I have also been busy implementing Bluetooth serial communications. The idea is that you can connect your PC to the Bluetooth UART and monitor what happens on the nTerm2-S. And more: you can send keystrokes to the nTerm2-S, which will forward it to the connected serial devices. The nTerm2-S is basically proxying between the serial device and the PC. The best part of this is that not only can you record the received serial data on the PC, but can also send data to the serial device, meaning that you can use the nTerm2-S to upload data. There are a few things to still iron out, but it's coming along quite nicely.
+
 
 23-6-2025
 
