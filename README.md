@@ -17,6 +17,35 @@ This board will run all FabGL software and examples, <ins>except</ins> the PC em
 
 # Progress
 
+26-10-2025
+
+I have been working on the software, and on testing. I don't have access to all types of hardware, but for now I have been testing with these:
+
+* A Synertek SYM-1, which is the oldest computer that I currently own.
+* An old(ish) Macbook (i7) running Ubuntu 24.04, with a serial dongle that is RS-232 V.24, i.e. uses -12V/+12V for communication.
+* The latest version of the nTerm2-S, but without the audio and relay circuits (minimum configuration).
+* A previous version of the nTerm2-S that I fully built for prototyping, and does have the audio and relay circuits.
+
+I have been testing at different baud rates, and have been able to go all the way down to 110 baud successfully.
+
+The SYM-1 doesn't go lower, so I thought to use my Linux machine to try `agetty` at 50 baud. But for some reason nothing under 110 baud would work. However, when I connect two nTerm2-S devices together, they can perfectly well communicate at 50 baud. So I suspect that the serial USB dongle has an issue with anything below 110 baud. I will have to check the signals with a scope to see what's really going on. The USB dongle uses a PL-2303 chip, and according to the datasheet it should be able to go down to at least 75 baud, and I suspect even lower. Maybe it's a driver issue.
+
+It IS actually a weird feeling to communicate with such a powerful Macbook over 110 baud. It really gave me the feeling that I was calling remotely into an old timesharing mainframe computer. :P
+
+While testing with `agetty`, I found that I had forgotten to implement BRK functionality. So I quickly added that, and now I can ask `agetty` to cycle through a bunch of predetermined baud rates to match my nTerm2-S's baud rate.
+
+I am now contemplating display modes and resolutions. Currently I use 2 resolutions: 640x350 and 800x480. 800x480 is closest to the DEC VT340, which apparently was 800x500 pixels. But at 800x480, I can only have 8 colors (4 low and 4 high intensity). But it does give high resolution graphics, and it also gives a quite readable 132x25/50 characters (6 pixels wide).
+
+At 640x350, I can have 16 colors. But what's more is, that if I use 640x350 monochrome, I can have the Bluetooth stack running! So it looks like I will support the following modes:
+
+640x350, [80x24 + status bar, 80x25, 80x48 + status bar, 80x50], 2 colors, bluetooth
+640x350, [80x24 + status bar, 80x25, 80x48 + status bar, 80x50], 16 colors, no bluetooth
+800x480, [80x24 + status bar, 80x25, 80x48 + status bar, 80x50, 132x24 + status bar, 132x25, 132x48 + status bar, 132x50], 8 colors, no bluetooth
+
+I do have a font that tries to show something readable when using 132x25 characters on a 640x350 resolution screen, but it's not really something I take serious.
+
+Higher resolutions that 800x480 are possible, but simply mean less colors because the ESP32 just does not have enough memory. There seems to be a solution for that, by adding PSRAM. But that would mean a redesign, so will happen in a next version (if any).
+
 25-10-2025
 
 The last update was quite some time ago. I have been struggling with both time to work on this project, and struggling with the rendering issue of the terminal application. Somehow the glyph options of the Status Bar would sometimes 'bleed' over to the terminal text, causing letters to appear in reverse video. I had an inkling that this was being caused by the Status Bar rendering being interrupted by serial data being received and also rendered to the screen. Serial data is being received on an interrupt basis, so this was happening. However, I did not understand why.
