@@ -19,6 +19,14 @@ This board will run all FabGL software and examples, <ins>except</ins> the PC em
 
 **26-10-2025**
 
+That newt had it coming, I swear!
+
+@Fabrizio: it's really working well. Great job, thank you for all the work you did!
+
+![IMG_4139](https://github.com/user-attachments/assets/d9b9d243-752f-48c8-bf43-a3ec5d3fe928)
+
+**26-10-2025**
+
 I have been working on the software, and on testing. I don't have access to all types of hardware, but for now I have been testing with these:
 
 * A Synertek SYM-1, which is the oldest computer that I currently own.
