@@ -54,6 +54,10 @@ I do have a font that tries to show something readable when using 132x25 charact
 
 Higher resolutions than 800x480 are possible, but simply mean less colors because the ESP32 just does not have enough memory. There seems to be a solution for that, by adding PSRAM. But that would mean a hardware redesign, because there are no pins left to connect a PSRAM. I would have to add an I/O expander, either i2c or maybe 1-wire. That will only happen in a possible next version, which I will then probably also base on an ESP32-S3 (because it can do both UART and JTAG over USB, and is therefore tremendously much easier to debug).
 
+I actually made a proof of concept already beginning of this year. But I will not build it (and it's not finished), as I really want to move on to the ESP32-S3 or maybe even something better.
+
+https://github.com/RetepV/nTerm2-S-SD
+
 **25-10-2025**
 
 The last update was quite some time ago. I have been struggling with both time to work on this project, and struggling with the rendering issue of the terminal application. Somehow the glyph options of the Status Bar would sometimes 'bleed' over to the terminal text, causing letters to appear in reverse video. I had an inkling that this was being caused by the Status Bar rendering being interrupted by serial data being received and also rendered to the screen. Serial data is being received on an interrupt basis, so this was happening. However, I did not understand why.
