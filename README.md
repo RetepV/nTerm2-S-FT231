@@ -44,7 +44,7 @@ At 640x350, I can have 16 colors. But what's more is, that if I use 640x350 mono
 
 I do have a font that tries to show something readable when using 132x25 characters on a 640x350 resolution screen, but it's not really something I take serious.
 
-Higher resolutions that 800x480 are possible, but simply mean less colors because the ESP32 just does not have enough memory. There seems to be a solution for that, by adding PSRAM. But that would mean a redesign, so will happen in a next version (if any).
+Higher resolutions that 800x480 are possible, but simply mean less colors because the ESP32 just does not have enough memory. There seems to be a solution for that, by adding PSRAM. But that would mean a hardware redesign, so that will happen in a possible next version (which will then probably be based on an ESP32-S3 too).
 
 25-10-2025
 
