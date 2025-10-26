@@ -42,7 +42,7 @@ Here's a picture of two nTerm2-S's connected to each other, where one has the re
 
 ![IMG_4138](https://github.com/user-attachments/assets/c2a37ebf-0fe2-4f88-869e-388d22073b25)
 
-Another thing are supported display resolution and display modes... Currently I offer 2 resolutions: 640x350 and 800x480. 800x480 is closest to the DEC VT340, which apparently was 800x500 pixels. At 800x480, there is just enough memory to have 8 colors (4 low and 4 high intensity). But it does give high resolution graphics, and it also gives a quite readable 132x25/50 characters (6 pixels wide characters).
+Another thing is the supported display resolution and display modes... Currently I offer 2 resolutions: 640x350 and 800x480. 800x480 is closest to the DEC VT340, which apparently was 800x500 pixels. At 800x480, there is just enough memory to have 8 colors (4 low and 4 high intensity). But it does give high resolution graphics, and it also gives a quite readable 132x25/50 characters (6 pixels wide characters).
 
 At 640x350, I can have 16 colors. But what's more is, that if I use 640x350 monochrome, I can have the Bluetooth stack running! So it looks like I will support the following modes:
 
