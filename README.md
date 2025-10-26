@@ -38,9 +38,9 @@ I am now contemplating display modes and resolutions. Currently I use 2 resoluti
 
 At 640x350, I can have 16 colors. But what's more is, that if I use 640x350 monochrome, I can have the Bluetooth stack running! So it looks like I will support the following modes:
 
-640x350, [80x24 + status bar, 80x25, 80x48 + status bar, 80x50], 2 colors, bluetooth
-640x350, [80x24 + status bar, 80x25, 80x48 + status bar, 80x50], 16 colors, no bluetooth
-800x480, [80x24 + status bar, 80x25, 80x48 + status bar, 80x50, 132x24 + status bar, 132x25, 132x48 + status bar, 132x50], 8 colors, no bluetooth
+* 640x350, [80x24 + status bar, 80x25, 80x48 + status bar, 80x50], 2 colors, bluetooth
+* 640x350, [80x24 + status bar, 80x25, 80x48 + status bar, 80x50], 16 colors, no bluetooth
+* 800x480, [80x24 + status bar, 80x25, 80x48 + status bar, 80x50, 132x24 + status bar, 132x25, 132x48 + status bar, 132x50], 8 colors, no bluetooth
 
 I do have a font that tries to show something readable when using 132x25 characters on a 640x350 resolution screen, but it's not really something I take serious.
 
