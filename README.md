@@ -30,11 +30,19 @@ I have been testing at different baud rates, and have been able to go all the wa
 
 The SYM-1 doesn't go lower, so I thought to use my Linux machine to try `agetty` at 50 baud. But for some reason nothing under 110 baud would work. However, when I connect two nTerm2-S devices together, they can perfectly well communicate at 50 baud. So I suspect that the serial USB dongle has an issue with anything below 110 baud. I will have to check the signals with a scope to see what's really going on. The USB dongle uses a PL-2303 chip, and according to the datasheet it should be able to go down to at least 75 baud, and I suspect even lower. Maybe it's a driver issue.
 
+On this latest prototype of the nTerm2-S, I did not populate the relay circuits. So to connect it to the Linux machine, I had to dig up a bunch of converters. And I had to quickly wire a null-modem converter too. So this reminded me again of why I added those relay circuits. They are worth it. :)
+
+![IMG_4130](https://github.com/user-attachments/assets/c3f5fb5d-fc74-44a3-9fe1-88a1bf975831)
+
 It IS actually a weird feeling to communicate with such a powerful Macbook over 110 baud. It really gave me the feeling that I was calling remotely into an old timesharing mainframe computer. :P
 
 While testing with `agetty`, I found that I had forgotten to implement BRK functionality. So I quickly added that, and now I can ask `agetty` to cycle through a bunch of predetermined baud rates to match my nTerm2-S's baud rate.
 
-I am now contemplating display modes and resolutions. Currently I use 2 resolutions: 640x350 and 800x480. 800x480 is closest to the DEC VT340, which apparently was 800x500 pixels. But at 800x480, I can only have 8 colors (4 low and 4 high intensity). But it does give high resolution graphics, and it also gives a quite readable 132x25/50 characters (6 pixels wide).
+Here's a picture of two nTerm2-S's connected to each other, where one has the relay circuits. No huge tree of converters, just one to go from DB25 to DB9!
+
+![IMG_4138](https://github.com/user-attachments/assets/c2a37ebf-0fe2-4f88-869e-388d22073b25)
+
+Another thing are supported display resolution and display modes... Currently I offer 2 resolutions: 640x350 and 800x480. 800x480 is closest to the DEC VT340, which apparently was 800x500 pixels. At 800x480, there is just enough memory to have 8 colors (4 low and 4 high intensity). But it does give high resolution graphics, and it also gives a quite readable 132x25/50 characters (6 pixels wide characters).
 
 At 640x350, I can have 16 colors. But what's more is, that if I use 640x350 monochrome, I can have the Bluetooth stack running! So it looks like I will support the following modes:
 
@@ -42,9 +50,9 @@ At 640x350, I can have 16 colors. But what's more is, that if I use 640x350 mono
 * 640x350, [80x24 + status bar, 80x25, 80x48 + status bar, 80x50], 16 colors, no bluetooth
 * 800x480, [80x24 + status bar, 80x25, 80x48 + status bar, 80x50, 132x24 + status bar, 132x25, 132x48 + status bar, 132x50], 8 colors, no bluetooth
 
-I do have a font that tries to show something readable when using 132x25 characters on a 640x350 resolution screen, but it's not really something I take serious.
+I do have a font that tries to show something readable when using 132x25 characters on a 640x350 resolution screen. It's not really something I take serious, but the font is there and is added quickly enough. Maybe it's worth it for some edge cases. Or just maybe, I could get a resolution of 800x350?
 
-Higher resolutions that 800x480 are possible, but simply mean less colors because the ESP32 just does not have enough memory. There seems to be a solution for that, by adding PSRAM. But that would mean a hardware redesign, so that will happen in a possible next version (which will then probably be based on an ESP32-S3 too).
+Higher resolutions than 800x480 are possible, but simply mean less colors because the ESP32 just does not have enough memory. There seems to be a solution for that, by adding PSRAM. But that would mean a hardware redesign, because there are no pins left to connect a PSRAM. I would have to add an I/O expander, either i2c or maybe 1-wire. That will only happen in a possible next version, which I will then probably also base on an ESP32-S3 (because it can do both UART and JTAG over USB, and is therefore tremendously much easier to debug).
 
 25-10-2025
 
