@@ -17,7 +17,7 @@ This board will run all FabGL software and examples, <ins>except</ins> the PC em
 
 # Progress
 
-26-10-2025
+**26-10-2025**
 
 I have been working on the software, and on testing. I don't have access to all types of hardware, but for now I have been testing with these:
 
@@ -54,7 +54,7 @@ I do have a font that tries to show something readable when using 132x25 charact
 
 Higher resolutions than 800x480 are possible, but simply mean less colors because the ESP32 just does not have enough memory. There seems to be a solution for that, by adding PSRAM. But that would mean a hardware redesign, because there are no pins left to connect a PSRAM. I would have to add an I/O expander, either i2c or maybe 1-wire. That will only happen in a possible next version, which I will then probably also base on an ESP32-S3 (because it can do both UART and JTAG over USB, and is therefore tremendously much easier to debug).
 
-25-10-2025
+**25-10-2025**
 
 The last update was quite some time ago. I have been struggling with both time to work on this project, and struggling with the rendering issue of the terminal application. Somehow the glyph options of the Status Bar would sometimes 'bleed' over to the terminal text, causing letters to appear in reverse video. I had an inkling that this was being caused by the Status Bar rendering being interrupted by serial data being received and also rendered to the screen. Serial data is being received on an interrupt basis, so this was happening. However, I did not understand why.
 
@@ -72,8 +72,7 @@ Next steps are to clean up everything, reorganize the repository a bit, test wit
 
 What I have not mentioned before, is that I have also been busy implementing Bluetooth serial communications. The idea is that you can connect your PC to the Bluetooth UART and monitor what happens on the nTerm2-S. And more: you can send keystrokes to the nTerm2-S, which will forward it to the connected serial devices. The nTerm2-S is basically proxying between the serial device and the PC. The best part of this is that not only can you record the received serial data on the PC, but can also send data to the serial device, meaning that you can use the nTerm2-S to upload data. There are a few things to still iron out, but it's coming along quite nicely.
 
-
-23-6-2025
+**23-6-2025**
 
 Fixed a few small layout issues that I encountered while soldering, and then submitted as V0.10.
 
@@ -104,7 +103,7 @@ I also have a hot air station. But one of my goals is to make the nTerm2-S solde
 
 And then software. Software is coming along quite well, but I have to iron out one quite major thing. The FabGL 'canvas' class works great if you only have one source of data. But I need to render the terminal text from serial input, but also the bottom status bar, so the canvas has 2 sources of data. Canvas, however, only has one set of text properties (bold, inverse, etc.). The serial input and status bar are sharing the text properties, and so I get some random inverse letters in the terminal text, when serial data is received while I'm in the middle of rendering the status bar. I really don't want to change FabGL much, but this is a fundamental problem of Canvas. It has only one render queue, and text properties are global to Canvas and are not properties of the drawText commands that are being put in the queue. There are some different options, but all seem hacky, and I have already kind of hacked the status bar into FabGL as it currently is. I might have to take a step back and change the strategy.
 
-22-6-2025
+**22-6-2025**
 
 Soldered the minimum configuration of the board for working as a SporosTerm, which means: everything except the relays and their control, and the audo amplifier. Technically, the LEDs and the RTC are not necessary either, but I consider them an indispensible part of the terminal. PCB is not cleaned of flux yet, so it looks dirty.
 
@@ -112,7 +111,7 @@ Soldered the minimum configuration of the board for working as a SporosTerm, whi
 
 Connected everything and fired it up, and everything works. FabGL's Space Invaders, AnsiTerminal, Altair 8800 work. And SporosTerm works super too. The RTC works, it kept its time overnight. 
 
-21-6-2025
+**21-6-2025**
 
 Soldered R39 and R40, and the FT231 is recognized. The USB wants to give us 500mA, and on-board we have a perfect 3V3. The protection diodes work fine too.
 
@@ -126,7 +125,7 @@ Yep. Flashing works.
 
 ![IMG_3554](https://github.com/user-attachments/assets/1700545f-c709-4649-a98f-5e19831cd6a7)
 
-20-6-2025
+**20-6-2025**
 
 Soldering commences, the FT231 solders really easily, that's a success! I did find one sloppyness on my side, C19 is rotated the wrong way. Of course it works just as fine in this orientation, but for sure people will accidentally solder it in the wrong way, as all the other C's are oriented the other way. That needs to be fixed in a V0.10, but it's cosmetic so no risk of breaking something.
 
@@ -134,13 +133,13 @@ Then life came in the way before I was able to solder R39 and R40, so I can't te
 
 ![IMG_3543](https://github.com/user-attachments/assets/c4ece7f1-b313-4cb4-95b0-d104e04dac6d)
 
-18-6-2025
+**18-6-2025**
 
 Received the new PCBs today. Won't be able to solder them as yet, other things have priority. :)
 
 ![IMG_3540](https://github.com/user-attachments/assets/195ac3f1-8b6d-4705-862d-0615a4c6ab90)
 
-12-6-2025
+**12-6-2025**
 
 I actually ordered 5 new boards from JLCPCB on 5-6-2025 (€15,99 including shipping). They were finished and shipped on 7-6-2025. Arrived in Leipzig (Germany) on 8-6-2025. They are taking their time and still have the package in their posession on 12-6-2025. So now waiting for them to pass it over to The Netherlands so that it can be delivered to me. What I learn from this is that the Chinese are very efficient, while the Germans seem to have lost their knack. I guess I shouldn't expect anything until end of next week.
 
@@ -155,7 +154,7 @@ So if you want to save a bit of money and don't want to use those subcomponents,
 
 Ah, I also found out that the footprint for the VGA connector had been wrong all along. With both the prototypes, it was kind of hard to put the VGA connector pins in their holes. It turned out that the spacing was wrong. The connector would fit with a little bit of pushing, but that's not right. So I updated the footprint, and it should be good now.
 
-5-6-2025
+**5-6-2025**
 
 Three things progressed.
 
@@ -165,7 +164,7 @@ Three things progressed.
 
 The scary part is the FT-231 circuit. I have not tested it, and have to hope that I didn't make a mistake. The other more or less scary thing is that I had to move the AUDIO_PWM track, and hope that I did not introduce a bunch of crossover. The AUDIO_PWM track had to cross over the RxD_0 and TxD_0 lines. But these are only used for the ESP32 console ouput or during updating of the firmware. So if console output is removed, there should simply be nothing to cross over.
 
-29-5-2025
+**29-5-2025**
 
 The real time clock survived the night on only the backup power. :) At the last moment, I decided to put a series resistor of 150 ohm with the supercap (there was none in [Dallas's reference design](https://nl.mouser.com/datasheet/2/272/rtc-4-click-manual-v100-1483841.pdf). The inrush current when the supercap is empty of charge could be quite high. It's just for a short time, but theoretically it could cause such a power dip that it would cause boot loops. I haven't measured the inrush current, but "the word" is that it could even be multiple Amperes, which could theoretically also cause a track to burn.
 
@@ -173,7 +172,7 @@ I used a used Panasonic 1F 5.5V supercap that I had lying around, while I waitin
 
 I will also do some experiments with using a battery and an extra BAT43 diode. That's also 2 components, and maybe a better plan. If the voltage drop over the diode is too high, maybe I could use a NID5100?
 
-28-5-2025
+**28-5-2025**
 
 I just wanted to share some images of the progress I am making. I am still using the previous board with the CP2102 for developing and prototyping.
 
@@ -188,7 +187,7 @@ Closeup of the nTerm2-S and the screen.
 
 Here I have added the DS2417 real time clock. It was easy, thanks to a whole bunch of people who created the [Arduino OneWire library](https://www.pjrc.com/teensy/td_libs_OneWire.html). I'm using a supercap as backup solution now, but might maybe switch to using a CR2023. But I'm not sure if that will work. I would have to add another diode in series making the voltage (in theory) 3V - 0.4V = 2.6V. But the lowest voltage supported by the DS2417 is 2.5V, so it's right on the edge. With the supercap I have some 3.2V. But the supercap will maybe last 2 weeks or so, while the CR2023 would probably last for years.
 
-23-5-2025
+**23-5-2025**
 
 What makes the difference between a home computer and a professional computer? The Real Time Clock! While working on the nTerm2-S firmware, I was able to add a status bar to the terminal. Memory is really tight, but CPU performance is not. So I thought: let's update it 10 times a second and show some sort of status of Rx, Tx, RTS and CTS, some blinkenlights. And then I thought that it would also be nice to show the time (and maybe date) in the status bar. That was quickly added. But well, what good are the time and date if you need to enter it manually every time you reset the terminal. So, we need an RTC.
 
