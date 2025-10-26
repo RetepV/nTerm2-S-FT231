@@ -38,7 +38,7 @@ It IS actually a weird feeling to communicate with such a powerful Macbook over 
 
 While testing with `agetty`, I found that I had forgotten to implement BRK functionality. So I quickly added that, and now I can ask `agetty` to cycle through a bunch of predetermined baud rates to match my nTerm2-S's baud rate.
 
-Here's a picture of two nTerm2-S's connected to each other, where one has the relay circuits. No huge tree of converters, just one to go from DB25 to DB9!
+Here's a picture of two nTerm2-S's connected to each other, where one has the relay circuits. No huge tree of converters, just one converter to go from DB25 to DB9, and then just set the Modem Type to 'Null modem' in the settings!
 
 ![IMG_4138](https://github.com/user-attachments/assets/c2a37ebf-0fe2-4f88-869e-388d22073b25)
 
