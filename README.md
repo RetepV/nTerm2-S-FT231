@@ -15,6 +15,16 @@ The nTerm2-S is ultimately based on the FABGL library and board design from Fabr
 
 This board will run all FabGL software and examples, <ins>except</ins> the PC emulator. The PC emulator needs PSRAM, but the nTerm2-S does not have enough I/O pins left to connect a PSRAM. Maybe I will do a V2 at some point, using an I/O expander to free up ESP32 pins for connecting a PSRAM and an SD card. Or maybe I will make a new design using a newer version CPU. But let's finish the nTerm2-S first... ;)
 
+# Software
+
+For the software, please have a look here: https://github.com/RetepV/SporosTerm
+
+All instructions for building the software are there. But I also provide releases with handy scripts/batch files to upload a binary version.
+
+# Build instructions
+
+I will provide build instructions here, when I actually have some. I'm going to build another one, and will make pictures.
+
 # Progress
 
 **26-10-2025**
