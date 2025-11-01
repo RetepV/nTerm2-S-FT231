@@ -27,6 +27,18 @@ I will provide build instructions here, when I actually have some. I'm going to 
 
 # Progress
 
+**1-11-2025**
+
+In between wrestling with trying to get the Bluetooth Serial Port Profile working and stable (which I am only moderately successful in, to be honest), I spent some time on a useless but fun thing: a signon screen. :)
+
+![Adobe Express - Adobe Express - IMG_4155](https://github.com/user-attachments/assets/326b1cc4-03a3-46a8-873e-137678e7799b)
+
+About the Bluetooth SPP. It seems that I have it mostly under control now, it's quite usable and I'm not missing characters anymore. However, there is a problem that after pairing, it's only possible to connect one time. If we disconnect and try to connect again, the connection seems to be made, but no data is being transferred. If the nTerm2-S is 'forgotton' and paired again, it will work again for one connection only.
+
+After browsing the internet, it seems that I am not the only one with this issue, and that it looks to be an issue with the ESP32's Bluetooth implementation loosing the pairing key for some reason.
+
+There are some questions on the Espressif forums, and this one is quite detailed and seems to explain the issue quite well: https://esp32.com/viewtopic.php?p=151510&hilit=esp32+spp#p151510
+
 **26-10-2025**
 
 That newt had it coming, I swear!
