@@ -27,6 +27,12 @@ I will provide build instructions here, when I actually have some. I'm going to 
 
 # Progress
 
+**2-11-2025**
+
+I have the Bluetooth working more or less great with Linux. I can pair, connect, disconnect, connect, disconnect, et
+
+The problem of Macos, not properly being able to reconnect after a disconnect, seems to be a bug of Macos specifically. The Serial Port Profile (SPP) support on Macos is buggy. I have reported the bug with Apple, let's see wat happens.
+
 **1-11-2025**
 
 In between wrestling with trying to get the Bluetooth Serial Port Profile working and stable (which I am only moderately successful in, to be honest), I spent some time on a useless but fun thing: a signon screen. :)
