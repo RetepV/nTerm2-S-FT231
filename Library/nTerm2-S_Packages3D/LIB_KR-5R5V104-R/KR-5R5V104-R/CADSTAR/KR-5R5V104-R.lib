@@ -1,0 +1,18 @@
+.KR-5R5V104-R :1 ;Supercapacitors / Ultracapacitors .1F 5.5V EDLC Coin Cell VERT
+KR5R5V104R
+*STM C
+*NGS
+*PLB 1="-" 2="+"
+*MXP 2
+*DFN KR-5R5V104-R
+~!Manufacturer_Name (Eaton)
+~!Manufacturer_Part_Number (KR-5R5V104-R)
+~!Mouser Part Number (504-KR-5R5V104-R)
+~!Link Mouser Price/Stock (https://www.mouser.co.uk/ProductDetail/PowerStor-Eaton/KR-5R5V104-R/?qs=9GX7soZQXxF%252BhpLlNv3IOw%3D%3D)
+~!Arrow Part Number (KR-5R5V104-R)
+~!Link Arrow Price/Stock (https://www.arrow.com/en/products/kr-5r5v104-r/eaton)
+~!Link Datasheet (https://www.eaton.com/content/dam/eaton/products/electronic-components/resources/data-sheet/eaton-kr-supercapacitors-coin-cells-data-sheet.pdf)
+~!Height (12.7mm)
+~!3D_Model (KR-5R5V104-R)
+KR-5R5V104-R
+1.1!U 2.1!U 

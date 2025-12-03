@@ -1,0 +1,156 @@
+
+(EDIF
+  (rename &KR_5R5V104_R "KR_5R5V104_R")
+  (EDIFVersion 2 0 0)
+  (EDIFLevel 0)
+  (keywordMap (keywordLevel 0))
+  (status
+    (written
+      (timestamp 2025 05 20 20 05 41)
+      (dataOrigin "4698170/1683154/2.50/2/3/Capacitor Polarised")
+      (program "SamacSys ECAD Model KR_5R5V104_R"
+        (version "1.2"))))
+  (library
+  (rename &KR_5R5V104_R "KR_5R5V104_R")
+    (EDIFLevel 0)
+    (technology
+      (numberDefinition (scale 1 (e 254 -6) (unit DISTANCE)))
+      (userData GRIDRESOLUTION (integer 50 50))
+      (figureGroup DEFAULT (pathWidth 10) (textHeight 100))
+      (figureGroup PROPERTY (pathWidth 10) (textHeight 90))
+      (figureGroup PINNUMBER (pathWidth 10) (textHeight 90))
+      (figureGroup PINNAME (pathWidth 10) (textHeight 90))
+      (figureGroup COMMENT (pathWidth 10) (textHeight 90))
+      (figureGroup PIN (pathWidth 10) (textHeight 90))
+      (figureGroup GRAPHIC (pathWidth 10) (textHeight 100))
+    )
+    (cell
+      (rename &KR_5R5V104_R "KR_5R5V104_R")
+      (cellType GENERIC)
+      (view
+        (rename NORMAL "Normal")
+        (viewType SCHEMATIC)
+        (interface
+          (designator "C")
+          (property (rename PACKAGENAME "PackageName") (string "KR_5R5V104_R"))
+          (property (rename ISHETEROGENEOUS "IsHeterogeneous") (string "False"))
+          (property (rename DEVICESINVIEW "DevicesInView") (string "1"))
+          (property (rename DEVICESINPACKAGE "DevicesInPackage") (string "1"))
+          (property (rename DEVICEDESIGNATOR "DeviceDesignator") (string "A"))
+          (property (rename DEVICENUMBERING "DeviceNumbering") (string "Alpha"))
+          (property (rename PCB_32_FOOTPRINT "PCB Footprint") (string "KR5R5V104R"))
+          (property (rename &Manufacturer_Name "Manufacturer_Name") (string "Eaton"))
+          (property (rename &Manufacturer_Part_Number "Manufacturer_Part_Number") (string "KR-5R5V104-R"))
+          (property (rename &Mouser_Part_Number "Mouser Part Number") (string "504-KR-5R5V104-R"))
+          (property (rename &Mouser_Price_Stock "Mouser Price/Stock") (string "https://www.mouser.co.uk/ProductDetail/PowerStor-Eaton/KR-5R5V104-R/?qs=9GX7soZQXxF%252BhpLlNv3IOw%3D%3D"))
+          (property (rename &Arrow_Part_Number "Arrow Part Number") (string "KR-5R5V104-R"))
+          (property (rename &Arrow_Price_Stock "Arrow Price/Stock") (string "https://www.arrow.com/en/products/kr-5r5v104-r/eaton"))
+          (property (rename &Description "Description") (string "Supercapacitors / Ultracapacitors .1F 5.5V EDLC Coin Cell VERT"))
+          (property (rename &Datasheet_Link "Datasheet Link") (string "https://www.eaton.com/content/dam/eaton/products/electronic-components/resources/data-sheet/eaton-kr-supercapacitors-coin-cells-data-sheet.pdf"))
+          (property (rename &Height "Height") (string "12.7 mm"))
+          (property (rename &_60__32_VALUE_32__62_ "Value") (string "KR_5R5V104_R"))
+          (property (rename VALUE "Value") (string "Value"))
+          (port
+            (rename &M "M")
+            (designator "1")
+            (property (rename ORDER "Order") (string "0") (owner "OrCAD"))
+          )
+          (port
+            (rename &P "P")
+            (designator "2")
+            (property (rename ORDER "Order") (string "1") (owner "OrCAD"))
+          )
+          (symbol
+            (portImplementation
+              (name &P)
+              (keywordDisplay DESIGNATOR (display PINNUMBER))
+              (figure PIN (path (pointList (pt -100 -100) (pt 0 -100))))
+              (connectLocation (figure GRAPHIC (dot (pt -100 -100))))
+            )
+            (portImplementation
+              (name &M)
+              (keywordDisplay DESIGNATOR (display PINNUMBER))
+              (figure PIN (path (pointList (pt 300 -100) (pt 400 -100))))
+              (connectLocation (figure GRAPHIC (dot (pt 400 -100))))
+            )
+            (figure GRAPHIC
+              (figureGroupOverride GRAPHIC
+                (pathWidth 10))
+              (path
+                (pointList
+                  (pt 100 0)
+                  (pt 100 -200)
+                  (pt 130 -200)
+                  (pt 130 0)
+                  (pt 100 0)
+                )
+              )
+            )
+            (figure GRAPHIC
+              (figureGroupOverride GRAPHIC
+                (pathWidth 10))
+              (path
+                (pointList
+                  (pt 80 -50)
+                  (pt 40 -50)
+                )
+              )
+            )
+            (figure GRAPHIC
+              (figureGroupOverride GRAPHIC
+                (pathWidth 10))
+              (path
+                (pointList
+                  (pt 60 -30)
+                  (pt 60 -70)
+                )
+              )
+            )
+            (figure GRAPHIC
+              (figureGroupOverride GRAPHIC
+                (pathWidth 10))
+              (path
+                (pointList
+                  (pt 0 -100)
+                  (pt 100 -100)
+                )
+              )
+            )
+            (figure GRAPHIC
+              (figureGroupOverride GRAPHIC
+                (pathWidth 10))
+              (path
+                (pointList
+                  (pt 200 -100)
+                  (pt 300 -100)
+                )
+              )
+            )
+              (figure GRAPHIC
+                (figureGroupOverride GRAPHIC
+	              (fillPattern 1 1
+                    (boolean
+                      (boolean
+                        (true)
+                      )
+                    )
+                  )
+                )
+              (polygon
+                (pointList
+                  (pt 200 0)
+                  (pt 200 -200)
+                  (pt 170 -200)
+                  (pt 170 0)
+                  (pt 200 0)
+                )
+              )
+            )
+            (keywordDisplay DESIGNATOR (display PROPERTY (justify 24) (orientation R0) (origin (pt 250 80))))
+            (propertyDisplay &_60__32_VALUE_32__62_ (display PROPERTY (justify 24) (orientation R0) (origin (pt 250 -20))))
+          )
+        )
+      )
+    )
+  )
+)

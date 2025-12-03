@@ -1,0 +1,13 @@
+(unit MM)
+
+(package "KR-5R5V105-R"
+    (type UNDEF)
+    (uver 2)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (utime 2022-03-23-20:01:21)
+    (mountForm default
+        (footprintRef "KR5R5V105R")
+        (spec "System")
+    )
+)

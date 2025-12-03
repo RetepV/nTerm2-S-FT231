@@ -1,0 +1,11 @@
+FILE_TYPE = MULTI_PHYS_TABLE;
+
+PART 'KR_5R5V104_R'
+CLASS = DISCRETE
+{========================================================================================}
+:"MANUFACTURER_NAME", "MANUFACTURER_PART_NUMBER"= "PART_NUMBER", "JEDEC_TYPE", "PACK_TYPE", "MOUSER_PART_NUMBER", "MOUSER_PRICE/STOCK", "ARROW_PART_NUMBER", "ARROW_PRICE/STOCK", "DESCRIPTION", "DATASHEET", "HEIGHT";
+{========================================================================================}
+ "Eaton", "KR-5R5V104-R" (!) = "", "KR5R5V104R", "Other", "504-KR-5R5V104-R", "https://www.mouser.co.uk/ProductDetail/PowerStor-Eaton/KR-5R5V104-R/?qs=9GX7soZQXxF%252BhpLlNv3IOw%3D%3D", "KR-5R5V104-R", "https://www.arrow.com/en/products/kr-5r5v104-r/eaton", "Supercapacitors / Ultracapacitors .1F 5.5V EDLC Coin Cell VERT", "https://www.eaton.com/content/dam/eaton/products/electronic-components/resources/data-sheet/eaton-kr-supercapacitors-coin-cells-data-sheet.pdf", "12.7 mm"
+END_PART
+
+END.

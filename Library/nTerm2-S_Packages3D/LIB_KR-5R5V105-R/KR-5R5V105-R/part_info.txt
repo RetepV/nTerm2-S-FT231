@@ -1,0 +1,9 @@
+Manufacturer=Eaton
+PartNumber=KR-5R5V105-R
+PartCategory=Capacitor Polarised
+PackageCategory=Other
+PinCount=2
+Version=1.4
+Released=2020-04-14 12:34:07
+Downloaded=2025-05-20 20:16:28
+3D=Y
