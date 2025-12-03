@@ -27,6 +27,14 @@ I will provide build instructions here, when I actually have some. I'm going to 
 
 # Progress
 
+**3-12-2025**
+
+I found a little time to finally finish v0.11. This is it. I am not going to add anything more. Done deal. I will ask JLCPCB to fabricate a new set of v0.11 boards and will then build up one for the purpose of making pictures on how to solder one together. Maybe I'll make a video, which will be my first.
+
+At the last possible moment, I added a 3-terminal pin header to optionally attach a 10K potmeter to, to use as volume control. I realised a bit late that if you build the amplifier and connect a speaker directly to the board, there is no way to control the volume. I can add volume control in software, but really: if you accidentally have the volume booming too loud, would you rather want to turn a volume pot or go into the setup menu, choose 'Audio', decrease the volume, and press Save? Anyway, it is optional and you can leave it out. Just don't forget to connect pins 1 and 2 on the 3-pin VOLUME header and solder R19. All info in the schematic.
+
+I also improved some routing, and a few other little things.
+
 **2-11-2025**
 
 I have the Bluetooth working more or less great with Linux. I can pair, connect, disconnect, connect, disconnect, et
