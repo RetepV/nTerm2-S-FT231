@@ -19,7 +19,7 @@ This board will run all FabGL software and examples, <ins>except</ins> the PC em
 
 For the software, please have a look here: https://github.com/RetepV/SporosTerm
 
-All instructions for building the software are there. But I also provide releases with handy scripts/batch files to upload a binary version.
+All instructions for building the software from source are there. But I also provide releases with handy scripts/batch files to easily program the board.
 
 # Build instructions
 
