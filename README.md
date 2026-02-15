@@ -27,7 +27,7 @@ I will provide build instructions here, when I actually have some. I'm going to 
 
 # Progress
 
-**3-12-2025**
+**16-2-2026**
 
 Just mentioning some progress here. I have started to build a new nTerm2-S, and am recording that. I have the handicap of not having great eyes anymore and have to solder using a magnifying glass these days. And this gets in the way of filming. So I had to rig something together. In the end I was able to ty my iPhone to the magnifying glass in such a way that I could look past it, while the iPhone looked straight down at my work area and my hands. That actually worked much better than I thought, except that if I accidentally touch the magnifying glass, the video wobbles a bit. :) Let's see if I can edit that out. No tricks, just honest handsoldering, including jittery hands, accidental baking of a resistor, and the occasional mistake that needed to be redone.
 
