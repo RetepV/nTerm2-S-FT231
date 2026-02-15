@@ -29,6 +29,14 @@ I will provide build instructions here, when I actually have some. I'm going to 
 
 **3-12-2025**
 
+Just mentioning some progress here. I have started to build a new nTerm2-S, and am recording that. I have the handicap of not having great eyes anymore and have to solder using a magnifying glass these days. And this gets in the way of filming. So I had to rig something together. In the end I was able to ty my iPhone to the magnifying glass in such a way that I could look past it, while the iPhone looked straight down at my work area and my hands. That actually worked much better than I thought, except that if I accidentally touch the magnifying glass, the video wobbles a bit. :) Let's see if I can edit that out. No tricks, just honest handsoldering, including jittery hands, accidental baking of a resistor, and the occasional mistake that needed to be redone.
+
+Anyway, here's a little unedited preview. Click it to play in Youtube.
+
+[![Soldering an nTerm2-S](https://img.youtube.com/vi/3b2PA793dA0/0.jpg)](https://www.youtube.com/watch?v=3b2PA793dA0)
+
+**3-12-2025**
+
 I found a little time to finally finish v0.11. This is it. I am not going to add anything more. Done deal. I will ask JLCPCB to fabricate a new set of v0.11 boards and will then build up one for the purpose of making pictures on how to solder one together. Maybe I'll make a video, which will be my first.
 
 At the last possible moment, I added a 3-terminal pin header to optionally attach a 10K potmeter to, to use as volume control. I realised a bit late that if you build the amplifier and connect a speaker directly to the board, there is no way to control the volume. I can add volume control in software, but really: if you accidentally have the volume booming too loud, would you rather want to turn a volume pot or go into the setup menu, choose 'Audio', decrease the volume, and press Save? Anyway, it is optional and you can leave it out. Just don't forget to connect pins 1 and 2 on the 3-pin VOLUME header and solder R19. All info in the schematic.
