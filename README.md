@@ -41,6 +41,8 @@ I now have some video editing to do, which I have never done before in my life. 
 
 A few mistakes were made, and I will show them uncensored. It resulted in a bunch of tips that are of general use when handsoldering SMD components. Let's see if I can make it educational. I hope that it will help some people take the plunge into SMD soldering. It's really not that hard. Just that you might need a 5x or 10x magnifying glass, like I do.
 
+This is my fourth board (the other three were prototypes), and I was able to make it work in one go. When you watch the video, you'll see that I had a bit of jittery fingers, and that it caused me to make some mistakes. No shame in that!
+
 **16-2-2026**
 
 Just mentioning some progress here. I have started to build a new nTerm2-S, and am recording that. I have the handicap of not having great eyes anymore and have to solder using a magnifying glass these days. And this gets in the way of filming. So I had to rig something together. In the end I was able to ty my iPhone to the magnifying glass in such a way that I could look past it, while the iPhone looked straight down at my work area and my hands. That actually worked much better than I thought, except that if I accidentally touch the magnifying glass, the video wobbles a bit. :) Let's see if I can edit that out. No tricks, just honest handsoldering, including jittery hands, accidental baking of a resistor, and the occasional mistake that needed to be redone.
