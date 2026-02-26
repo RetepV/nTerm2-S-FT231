@@ -27,6 +27,20 @@ I will provide build instructions here, when I actually have some. I'm going to 
 
 # Progress
 
+**26-2-2026**
+
+I have been making videos while going from this:
+
+![IMG_4402](https://github.com/user-attachments/assets/185dfe8f-42f0-4856-a55f-20dca6377d49)
+
+To this:
+
+![IMG_4403](https://github.com/user-attachments/assets/d6e7f410-c90e-4dcd-bf10-202f2ff32ee4)
+
+I now have some video editing to do, which I have never done before in my life. Including adding a voiceover, because most of the time I was silent and concentrated during soldering. I did talk to myself in a few places, maybe I'll keep that. :)
+
+A few mistakes were made, and I will show them uncensored. It resulted in a bunch of tips that are of general use when handsoldering SMD components. Let's see if I can make it educational. I hope that it will help some people take the plunge into SMD soldering. It's really not that hard. Just that you might need a 5x or 10x magnifying glass, like I do.
+
 **16-2-2026**
 
 Just mentioning some progress here. I have started to build a new nTerm2-S, and am recording that. I have the handicap of not having great eyes anymore and have to solder using a magnifying glass these days. And this gets in the way of filming. So I had to rig something together. In the end I was able to ty my iPhone to the magnifying glass in such a way that I could look past it, while the iPhone looked straight down at my work area and my hands. That actually worked much better than I thought, except that if I accidentally touch the magnifying glass, the video wobbles a bit. :) Let's see if I can edit that out. No tricks, just honest handsoldering, including jittery hands, accidental baking of a resistor, and the occasional mistake that needed to be redone.
