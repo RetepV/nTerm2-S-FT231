@@ -27,6 +27,26 @@ I will provide build instructions here, when I actually have some. I'm going to 
 
 # Progress
 
+**27-2-2026**
+
+Oops... I made a boo boo...
+
+I have completely forgotten about the 5K1 resistors on the CC1 and CC2 lines of the USB-C connector. And hence, no USB-C device will provide power to the board, except some cheap and probably dangerous USB-C chargers. I knew I should have added them, I remember even making a mental note, but yet I never added them. How could this happen? Well, apart from simply my inexperience with USB, I have been testing all these months with a nice and long Nintendo USB cable, which has a USB-A on one end and a USB-C on the other. And I had it plugged into a USB hub, because I'd rather risk burning out the hub than a USB port on my laptop. But USB-A will happily provide power to anything, so my board always powered up fine. It was not until I wanted to change some settings in the FT231, and used a USB-C cable to directly connect it to my laptop, that I found the board didn't want to power up. Major facepalm. 🤦
+
+Worst part (or better part, I'm not sure yet) is that this is quite a common mistake that people make. I should have know better, but on the other hand: it does make me feel a bit better that I'm not the only one. 😆
+
+I quickly confirmed that this was the problem by wiring up the two resistors. And yep, now USB-C is giving the board power.
+
+![IMG_4405](https://github.com/user-attachments/assets/49352472-0cca-4401-851c-5342339202cb)
+
+Adding two resistors seems like a quick and easy thing to do. But not this time, as the area where the resistors had to go was too crowded. So I had to refactor that whole area to make place. But now it looks a bit nicer too.
+
+I also took the opportunity to update the graphics on the board. I moved some to the back and made them bigger (turns out that JLCPCB doesn't charge extra for solder mask on the back), added the URLs to these repositories, and add the FabGL and j4f repositories as well.
+
+So here's v0.12. Only two resistors changed.
+
+This also has a consequence for the videos that I made. The videos are for a v0.11 board. What should I do? Make new boards yet again, and reshoot the videos? Maybe it's a good idea, because I learned a few things in the mean time, and the quality of the videos would become better. But the v0.11 videos are quite informational and educational already. I have to ponder this over a little.
+
 **26-2-2026**
 
 I have been making videos while going from this:
