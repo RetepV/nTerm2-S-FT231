@@ -43,7 +43,9 @@ Adding two resistors seems like a quick and easy thing to do. But not this time,
 
 I also took the opportunity to update the graphics on the board. I moved some to the back and made them bigger (turns out that JLCPCB doesn't charge extra for solder mask on the back), added the URLs to these repositories, and add the FabGL and j4f repositories as well.
 
-So here's v0.12. Only two resistors changed.
+So here's v0.12. Only two resistors changed. Let's play a game of Spot the Differences:
+
+![spot_the_differences_v0 11_v0 12](https://github.com/user-attachments/assets/664db560-0f56-4448-b17c-32c3d2984e38)
 
 This also has a consequence for the videos that I made. The videos are for a v0.11 board. What should I do? Make new boards yet again, and reshoot the videos? Maybe it's a good idea, because I learned a few things in the mean time, and the quality of the videos would become better. But the v0.11 videos are quite informational and educational already. I have to ponder this over a little.
 
