@@ -49,6 +49,10 @@ So here's v0.12. Only two resistors changed. Let's play a game of Spot the Diffe
 
 This also has a consequence for the videos that I made. The videos are for a v0.11 board. What should I do? Make new boards yet again, and reshoot the videos? Maybe it's a good idea, because I learned a few things in the mean time, and the quality of the videos would become better. But the v0.11 videos are quite informational and educational already. I have to ponder this over a little.
 
+By the way, I tallied up the costs of all the components. It comes down to about €40 for one board. But this was without looking for lower prices, I just went with the prices from Reichelt (https://www.reichelt.com).
+
+[nTerm2-S FT231 BOM with prices.csv.zip](https://github.com/user-attachments/files/25616203/nTerm2-S.FT231.BOM.with.prices.csv.zip)
+
 **26-2-2026**
 
 I have been making videos while going from this:
