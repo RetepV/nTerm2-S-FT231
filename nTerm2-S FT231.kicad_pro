@@ -803,7 +803,7 @@
       "idf": "",
       "netlist": "",
       "plot": "JLCPCB/",
-      "pos_files": "",
+      "pos_files": "JLCPCB/",
       "specctra_dsn": "",
       "step": "",
       "svg": "",
@@ -813,7 +813,7 @@
   },
   "schematic": {
     "annotate_start_num": 0,
-    "bom_export_filename": "",
+    "bom_export_filename": "JLCPCB/nTerm2-S FT231.csv",
     "bom_fmt_presets": [],
     "bom_fmt_settings": {
       "field_delimiter": ",",

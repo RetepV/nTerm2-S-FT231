@@ -1,0 +1,62 @@
+Id,Designator,Footprint,Quantity,Designation,Supplier and ref,Price €,Total €,Notes
+1,"R28,R25,R24",R_0603_1608Metric_Pad0.98x0.95mm_HandSolder,3,470,https://www.reichelt.com/nl/en/shop/product/smd_chip_resistor_0603_470_ohm_1_-89426,"0,02","0,06",
+2,"R2,R4,R6",R_0603_1608Metric_Pad0.98x0.95mm_HandSolder,3,390,https://www.reichelt.com/nl/en/shop/product/smd_chip_resistor_0603_390_ohm_1_-89425,"0,02","0,06",
+3,"R26,R29",R_0603_1608Metric_Pad0.98x0.95mm_HandSolder,2,12K,https://www.reichelt.com/nl/en/shop/product/smd_chip_resistor_0603_12_k-ohm_1_-89443,"0,02","0,04",
+4,"R33,R14,R34,R32,R9,R13,R10",R_0603_1608Metric_Pad0.98x0.95mm_HandSolder,7,2K2,https://www.reichelt.com/nl/en/shop/product/smd_chip_resistor_0603_2_2_k-ohm_1_-89434,"0,02","0,14",
+5,"R41,R42",R_0603_1608Metric_Pad0.98x0.95mm_HandSolder,2,27,https://www.reichelt.com/nl/en/shop/product/smd_chip_resistor_0603_27_ohm_1_-89411,"0,02","0,04",
+6,U4,TSOC-6_3.76x3.94mm_P1.27mm,1,DS2417,https://www.digikey.nl/en/products/detail/analog-devices-inc-maxim-integrated/DS2417P/956994,"3,87","3,87","Shop around, you can find them cheaper."
+7,"R18,R40,R22,R23,R19",R_0603_1608Metric_Pad0.98x0.95mm_HandSolder,5,10K,https://www.reichelt.com/nl/en/shop/product/smd_chip_resistor_0603_10_k-ohm_1_-89442,"0,02","0,1",
+8,"D10,D9,D6,D8,D1",D_SOD-123,5,BAT43W-V,https://www.reichelt.com/nl/en/shop/product/schottky_diode_30_v_0_2_a_sod-123-294308,"0,05","0,25",
+9,"K1,K2,K3",Relay_DPDT_AXICOM_IMSeries_Gullwing,3,IM41 3V,https://www.reichelt.com/nl/en/shop/product/axicom_im_signal_relay_3_v_dc_2_a_-338189,"1,88","5,64","Shop around, you can find them cheaper, maybe from other manufacturers."
+10,SW2,SW_Tactile_SPST_Angled_PTS645Vx58-2LFS-alt,1,RESET,https://www.reichelt.com/nl/en/shop/product/short-stroke_key_6_6x7_4_mm_height_8_35_mm_12_v_horizontal-27896,"0,2","0,2",
+11,J7,PinHeader_1x02_P2.54mm_Vertical,1,Line-out/Speaker,https://www.reichelt.com/nl/en/shop/product/pin_header_1x2_pin_straight_pitch_2_54mm_l_12_6mm-404274,"0,02","0,02",Don’t buy this. Buy a strip and break off 2 pins.
+12,R17,R_0603_1608Metric_Pad0.98x0.95mm_HandSolder,1,10,https://www.reichelt.com/nl/en/shop/product/smd_chip_resistor_0603_10_ohm_1_-89406,"0,02","0,02",
+13,U1,ESP32-WROOM-32,1,ESP32-WROOM-32,https://www.reichelt.com/nl/en/shop/product/wifi_smd_module_esp32-d0wd-v3_16_mb_spi_3_3_v_18_x_25_5_x_3_-300025,"4,22","4,22",
+14,SW1,SW_Tactile_SPST_Angled_PTS645Vx58-2LFS-alt,1,IO0,https://www.reichelt.com/nl/en/shop/product/short-stroke_key_6_6x7_4_mm_height_8_35_mm_12_v_horizontal-27896,"0,2","0,2",
+15,"C6,C33,C7,C28",C_0603_1608Metric_Pad1.08x0.95mm_HandSolder,4,100n,https://www.reichelt.com/nl/en/shop/product/smd_multilayer_0603_100_nf_10_16_v_x7r_125_c_ve_4k-31873,"0,02","0,08",
+16,J2,Connector_Mini-DIN_Female_6Pin_2rows,1,Keyboard,https://www.reichelt.com/nl/en/shop/product/6-pin_mini-din_socket_purple_shielded-52029,"1,12","1,12",
+17,"C25,C26,C27",CP_Elec_6.3x7.7,3,470u,https://www.reichelt.com/nl/en/shop/product/electrolytic_capacitor_smd_470_f_16_v_105_c_low_esr_8_x_10-289206,"0,25","0,75",
+18,"C30,C29",C_0603_1608Metric_Pad1.08x0.95mm_HandSolder,2,47p,https://www.reichelt.com/nl/en/shop/product/multi-layer_ceramic_capacitor_47pf_50v_125_c-393589,"0,02","0,04",
+19,"D11,D12",DIALIGHT_LED_3MM_DOUBLE,2,LED_Dual_AKAK,https://www.reichelt.com/nl/en/shop/product/led_module_red_green_3_mm_1_6_mcd_60_-231109,"2,54","5,08","Shop around, you can find them cheaper"
+20,"R38,R37,R36,R35,R30",R_0603_1608Metric_Pad0.98x0.95mm_HandSolder,5,2K,https://www.reichelt.com/nl/en/shop/product/smd_chip_resistor_0603_2_kohm_100_mw_1_-238043,"0,14","0,7","Should be able to get them for 0,02 cents"
+21,U2,SOIC-8_3.9x4.9mm_P1.27mm,1,LM386,https://www.reichelt.com/nl/en/shop/product/audio_amplifier_so-8-142519,"0,37","0,37",
+22,"R8,R7",R_0603_1608Metric_Pad0.98x0.95mm_HandSolder,2,220,https://www.reichelt.com/nl/en/shop/product/smd_chip_resistor_0603_220_ohm_1_-89422,"0,02","0,04",
+23,"C24,C16,C15,C22",C_0603_1608Metric_Pad1.08x0.95mm_HandSolder,4,1n,https://www.reichelt.com/nl/en/shop/product/smd_multilayer_0603_1_0_nf_cog_5_50_v_125_c-206965,"0,02","0,08",
+24,"R12,R15,R16,R11",R_0603_1608Metric_Pad0.98x0.95mm_HandSolder,4,120,https://www.reichelt.com/nl/en/shop/product/smd_chip_resistor_0603_120_ohm_1_-89419,"0,02","0,08",
+25,"C10,C9,C21,C12,C8,C11,C19",CP_EIA-3216-18_Kemet-A_Pad1.58x1.35mm_HandSolder,7,0.1u,https://www.reichelt.com/nl/en/shop/product/smd-tantalum_100nf_35v_125_c-206442,"0,25","1,75",
+26,C14,CP_EIA-3216-18_Kemet-A_Pad1.58x1.35mm_HandSolder,1,0.1u/25v,https://www.reichelt.com/nl/en/shop/product/smd-tantalum_100nf_35v_125_c-206442,"0,25","0,25",
+27,J3,Connector_Mini-DIN_Female_6Pin_2rows,1,Mouse,https://www.reichelt.com/nl/en/shop/product/6-pin_mini-din_socket_green_shielded-52028?search=6-pin%2520mini-DIN&,"1,01","1,01",
+28,U5,SOT-223-3_TabPin2,1,NCP1117-3.3_SOT223,https://www.reichelt.com/nl/en/shop/product/ldo_controller_fixed_3_3_v_sot-223-188925?search=ncp1117&,"0,3","0,3",
+29,C18,CP_EIA-6032-28_Kemet-C_Pad2.25x2.35mm_HandSolder,1,100u,https://www.reichelt.com/nl/en/shop/product/smd-tantalum_100_f_10v_125_c-206478,"0,46","0,46",
+30,"C31,C32",C_0603_1608Metric_Pad1.08x0.95mm_HandSolder,2,10p,https://www.reichelt.com/nl/en/shop/product/smd_multilayer_0603_10_pf_cog_5_50v_125_c-31853,"0,02","0,04",
+31,R20,R_0603_1608Metric_Pad0.98x0.95mm_HandSolder,1,150,https://www.reichelt.com/nl/en/shop/product/smd_chip_resistor_0603_150_ohm_1_-89420,"0,02","0,02",
+32,U3,SOIC-16_3.9x9.9mm_P1.27mm,1,MAX3232E,https://www.reichelt.com/nl/en/shop/product/rs232_2_drivers_2_receivers_so-16-56951,"2,49","2,49",
+33,C23,CP_EIA-7343-30_AVX-N_Pad2.25x2.55mm_HandSolder,1,100u/25V,https://www.reichelt.com/nl/en/shop/product/smd-tantal_capacitor_100_f_25v-167070,"2,02","2,02",
+34,"Q5,Q6,Q2,Q7,Q1,Q3,Q8,Q4",SOT-23,8,BC817,https://www.reichelt.com/nl/en/shop/product/bipolar_transistor_npn_45_v_0_5_a_0_25_w_sot-23-319279,"0,03","0,24",
+35,J6,USB_C_Receptacle_Molex_213716-0001,1,USB_C_Receptacle_USB2.0_16P,https://nl.farnell.com/molex/213716-0001/usb-conn-2-0-type-c-rcpt-16pos/dp/3648629?CMP=GRHB-OEMSECRETS,"1,31","1,31","Is a bit hard to find. Possibly you could substitute it with GCT USB4085, but it does look to have a bit different measurements. https://www.digikey.com/en/products/detail/gct/USB4085-GF-A/9859733"
+36,"R31,R43",R_0603_1608Metric_Pad0.98x0.95mm_HandSolder,2,4K7,https://www.reichelt.com/nl/en/shop/product/smd_chip_resistor_0603_4_7_k-ohm_1_-89438,"0,02","0,04",
+37,C20,CP_EIA-3528-21_Kemet-B_Pad1.50x2.35mm_HandSolder,1,10u,https://www.reichelt.com/nl/en/shop/product/smd-tantalum_10_f_10v_125_c-393731,"0,22","0,22",
+38,SW3,SW_Tactile_SPST_Angled_PTS645Vx58-2LFS-alt,1,DEFAULTS,https://www.reichelt.com/nl/en/shop/product/short-stroke_key_6_6x7_4_mm_height_8_35_mm_12_v_horizontal-27896,"0,2","0,2",
+39,R39,R_0603_1608Metric_Pad0.98x0.95mm_HandSolder,1,4.7K,https://www.reichelt.com/nl/en/shop/product/smd_chip_resistor_0603_4_7_k-ohm_1_-89438,"0,02","0,02",
+40,C5,C_0603_1608Metric_Pad1.08x0.95mm_HandSolder,1,2.2n,https://www.reichelt.com/nl/en/shop/product/smd_multilayer_ceramic_capacitor_2_2_n_10_-31866,"0,02","0,02",
+41,"R5,R3,R1",R_0603_1608Metric_Pad0.98x0.95mm_HandSolder,3,820,https://www.reichelt.com/nl/en/shop/product/smd_chip_resistor_0603_820_ohm_1_-89429,"0,02","0,06",
+42,BAT1,TE Connectivity CR2032 V,1,CR2032,https://www.reichelt.com/nl/en/shop/product/button_cell_holder_vertical_pcb_version-74687,"0,84","0,84",Others may fit
+43,D4,DIALIGHT_LED_3MM_SINGLE,1,LED,https://www.reichelt.com/nl/en/shop/search/dialight%203mm?GROUPINDEX=0&search=dialight+3mm,"0,97","0,97",
+44,U6,SOT-23-6,1,USBLC6-2SC6,https://www.reichelt.com/nl/en/shop/product/esd_protection_diodes_17_v_85_w_sot-23-6-219327,"0,15","0,15",
+45,J5,DSUB-9_Pins_Horizontal_P2.77x2.84mm_EdgePinOffset7.70mm_Housed_MountingHolesOffset9.12mm,1,RS-232 V.24,https://www.reichelt.com/nl/en/shop/product/d-sub-jack_9-polig_angled_rm_7_2-6954,"0,33","0,33",
+46,C2,CP_Elec_5x5.4,1,100u,https://www.reichelt.com/nl/en/shop/product/smd-e-cap_radial_100_f_4_v_85_c_1000_h_20_-228432,"0,22","0,22",
+47,C1,CP_Elec_6.3x7.7,1,220u,https://www.reichelt.com/nl/en/shop/product/smd-capacitor_220_f_16v_105_c_2000_h-275864,"0,2","0,2",
+48,J1,DSUB-15-HD AssMann HD 15FW,1,VGA,https://www.reichelt.com/nl/en/shop/product/d-sub_socket_high_density_15-pin_print_angled-8506,"0,43","0,43",
+49,R21,R_0603_1608Metric_Pad0.98x0.95mm_HandSolder,1,270,https://www.reichelt.com/nl/en/shop/product/smd_chip_resistor_0603_270_ohm_1_-89423,"0,02","0,02",
+50,J8,PinHeader_1x03_P2.54mm_Vertical,1,10K pot,https://www.reichelt.com/nl/en/shop/product/pin_header_1_x_3_pin_straight_pitch_2_54_mm-404276,"0,1","0,1",Don’t buy this. Buy a strip and break off 3 pins.
+51,C3,C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,1,10u,https://www.reichelt.com/nl/en/shop/product/mlcc_0603_10_uf_6_3_v_x5r_-10_-410107,"0,03","0,03","I have made a mistake here, it should have been size 0603 and not 0805. You can use either if you want, they will both fit. But I just used the 0603."
+52,J4,Jack_3.5mm_Ledino_KB3SPRS_Horizontal-alt,1,Line-out/Speaker,https://www.reichelt.com/nl/en/shop/product/jack_socket_3_5_mm_pcb_with_switch_contact-7301,"0,37","0,37",
+53,C4,C_0603_1608Metric_Pad1.08x0.95mm_HandSolder,1,47n,https://www.reichelt.com/nl/en/shop/product/multi-layer_ceramic_capacitor_47nf_50v_125_c-206999,"0,02","0,02",
+54,Y1,Crystal_C38-LF_D3.0mm_L8.0mm_Horizontal,1,32.768KHz,https://www.reichelt.com/nl/en/shop/product/quartz_32_768_khz-245393,"0,25","0,25",
+55,C13,CP_EIA-6032-28_Kemet-C_Pad2.25x2.35mm_HandSolder,1,10u/25v,https://www.reichelt.com/nl/en/shop/product/smd_tantalum_10_f_10_25v_case_c_125_c_ve_500-206470,"0,34","0,34",
+56,U7,SSOP-20_3.9x8.7mm_P0.635mm,1,FT231XS,https://nl.mouser.com/ProductDetail/FTDI/FT231XS-U?qs=Gp1Yz1mis3WFP7tMtj2Z9g%3D%3D&mgh=1&utm_id=20331598300&utm_source=google&utm_medium=cpc&utm_marketing_tactic=emeacorp&gad_source=1&gad_campaignid=20327123918&gbraid=0AAAAADn_wf0jQ3eO25OU7ZaUOrYeOZYda&gclid=Cj0KCQiAnJHMBhDAARIsABr7b85HFixtkLl5McDvIUx6xJr55c0ptB5DuYC_pPIU6uWl_VjRPusgF60aAt15EALw_wcB,"2,01","2,01","Not everyone carries these. I actually purchased them via Aliexpress, here: https://nl.aliexpress.com/item/1005008798538821.html?pdp_npi=4%40dis%21EUR%21€%204%2C09%21€%204%2C09%21%21%214.71%214.71%21%402103963717703278840165996eeb1d%2112000046707781765%21sh%21NL%211858459969%21X&spm=a2g0o.store_pc_allItems_or_groupList.new_all_items_2007599280250.1005008798538821&gatewayAdapt=glo2nld"
+57,R27,R_0603_1608Metric_Pad0.98x0.95mm_HandSolder,1,5K,https://www.reichelt.com/nl/en/shop/product/smd_chip_resistor_0603_5_1_kohm_100_mw_1_-238051,"0,06","0,06","I expect you can use 4.7K as well, for this one."
+58,D3,Nexperia_CFP3_SOD-123W,1,1N5819,https://www.reichelt.com/nl/en/shop/product/schottky_40v_1a_sod123_450mw-382908,"0,25","0,25",
+59,C17,CP_EIA-3216-18_Kemet-A_Pad1.58x1.35mm_HandSolder,1,1u,https://www.reichelt.com/nl/en/shop/product/smd_tantalum_1_f_10_25v_case_a_125_c_-393718,"0,3","0,3",
+,,,,,,,,
+,,,,,,Total:,"40,54",
