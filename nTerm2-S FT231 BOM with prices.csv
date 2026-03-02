@@ -7,7 +7,7 @@ Id,Designator,Footprint,Quantity,Designation,Supplier and ref,Price €,Total �
 6,U4,TSOC-6_3.76x3.94mm_P1.27mm,1,DS2417,https://www.digikey.nl/en/products/detail/analog-devices-inc-maxim-integrated/DS2417P/956994,"3,87","3,87","Shop around, you can find them cheaper."
 7,"R18,R40,R22,R23,R19",R_0603_1608Metric_Pad0.98x0.95mm_HandSolder,5,10K,https://www.reichelt.com/nl/en/shop/product/smd_chip_resistor_0603_10_k-ohm_1_-89442,"0,02","0,1",
 8,"D10,D9,D6,D8,D1",D_SOD-123,5,BAT43W-V,https://www.reichelt.com/nl/en/shop/product/schottky_diode_30_v_0_2_a_sod-123-294308,"0,05","0,25",
-9,"K1,K2,K3",Relay_DPDT_AXICOM_IMSeries_Gullwing,3,IM41 3V,https://www.reichelt.com/nl/en/shop/product/axicom_im_signal_relay_3_v_dc_2_a_-338189,"1,88","5,64","Shop around, you can find them cheaper, maybe from other manufacturers."
+9,"K1,K2,K3",Relay_DPDT_AXICOM_IMSeries_Gullwing,3,IM41 3V,https://www.reichelt.com/nl/en/shop/product/axicom_im_signal_relay_3_v_dc_2_a_-338189,"1,88","5,64","Shop around, you can find them cheaper. Alternatives: Panasonic AGQ210A03Z, Omron G6KU-2F-Y-DC3"
 10,SW2,SW_Tactile_SPST_Angled_PTS645Vx58-2LFS-alt,1,RESET,https://www.reichelt.com/nl/en/shop/product/short-stroke_key_6_6x7_4_mm_height_8_35_mm_12_v_horizontal-27896,"0,2","0,2",
 11,J7,PinHeader_1x02_P2.54mm_Vertical,1,Line-out/Speaker,https://www.reichelt.com/nl/en/shop/product/pin_header_1x2_pin_straight_pitch_2_54mm_l_12_6mm-404274,"0,02","0,02",Don’t buy this. Buy a strip and break off 2 pins.
 12,R17,R_0603_1608Metric_Pad0.98x0.95mm_HandSolder,1,10,https://www.reichelt.com/nl/en/shop/product/smd_chip_resistor_0603_10_ohm_1_-89406,"0,02","0,02",
